@@ -1,0 +1,18 @@
+package ejemploPolimorfismo;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Figura f1= new Figura(); NO SE PUEDE porque es una clase abstracta
+		
+		Cuadrado cu1 = new Cuadrado("Primer cuadrado", "Rojo", 1);
+		
+		Circulo ci1 = new Circulo ("Primer Circulo", "Azul", 1);                                                               
+		
+		System.out.println(cu1);
+		//con el poliformismo instanciamos un clase figura de tipo cuadrado para poder trabajadr con tipos genericos porque
+		//es mejor trabajar co tipos generiscos 
+	}
+
+}

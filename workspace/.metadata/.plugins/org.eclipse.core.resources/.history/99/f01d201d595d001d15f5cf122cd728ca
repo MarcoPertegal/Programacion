@@ -1,0 +1,5 @@
+org.eclipse.ui.texteditor.ruler.actions/org.eclipse.ui.texteditor.BookmarkRulerAction" commandName="Text Editor Bookmark Ruler Action" category="_YppWf2DxEe22Wo-giW7bFw"/>
+  <commands xmi:id="_Ypoy_mDxEe22Wo-giW7bFw" elementId="AUTOGEN:::org.eclipse.ui.texteditor.ruler.actions/org.eclipse.ui.texteditor.SelectRulerAction" commandName="Text Editor Ruler Single-Click" category="_YppWf2DxEe22Wo-giW7bFw"/>
+  <commands xmi:id="_Ypoy_2DxEe22Wo-giW7bFw" elementId="AUTOGEN:::org.eclipse.wst.css.core.csssource.ruler.actions/org.eclipse.ui.texteditor.BookmarkRulerAction" commandName="Add Bookmark..." category="_YppWf2DxEe22Wo-giW7bFw"/>
+  <commands xmi:id="_YpozAGDxEe22Wo-giW7bFw" elementId="AUTOGEN:::org.eclipse.wst.css.core.csssource.ruler.actions/org.eclipse.ui.texteditor.SelectRulerAction" commandName="Select Ruler" category="_YppWf2DxEe22Wo-giW7bFw"/>
+  <commands xmi:id="_YpozAWDxEe22Wo-giW7bFw" elementId="AUTOGEN:::org.eclipse.wst.dtd.core.dtdsource.ruler.actions/org.eclipse.ui.texte

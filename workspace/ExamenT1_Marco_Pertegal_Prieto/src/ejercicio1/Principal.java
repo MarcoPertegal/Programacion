@@ -1,0 +1,75 @@
+package ejercicio1;
+
+import utilidades.Leer;
+
+public class Principal 
+{
+
+	public static void main(String[] args) 
+	{
+		// %d para numeros enteros, %s para string, %.2f para doubles
+		
+		String nom,sexo,estCivil;
+		
+		double indMasCorp=0.0, peso, alt;
+		
+		
+		System.out.println("");
+		
+		System.out.println("Bienvenido, en este programa vamos a calcular su índice de masa corporal.");
+		
+		System.out.println("/////////////////////////////////////////////////////////////////////////");
+		
+		System.out.println("Por favor introduzca los siguientes datos.");
+		
+		System.out.println("Su nombre completo:");
+		
+		nom=Leer.dato();
+		
+		System.out.println("Hola "+nom+", introduzca si es hombre o mujer:");
+		
+		sexo=Leer.dato();
+		
+		System.out.println("Su estado civil, casado o soltero:");
+		
+		estCivil=Leer.dato();
+		
+		System.out.println("Su peso actual:");
+		
+		peso=Leer.datoDouble();
+		
+		System.out.println("Y por último su altura en metros:");
+		
+		alt=Leer.datoDouble();
+		
+		System.out.println("A continuación el programa realizará su documento.");
+		
+		System.out.println("");
+		
+		indMasCorp=peso/(alt*alt);
+		
+		System.out.println("//////////////////////////////////////////////////////");
+		
+		System.out.println("ÍNDICE DE MASA CORPORAL");
+		
+		System.out.println("///////////////////////////////////////////////////////");
+		
+		System.out.println("Nombre completo:"+nom);
+		
+		System.out.println("Sexo: "+sexo);
+		
+		System.out.println("Estado civil: "+estCivil);
+		
+		System.out.printf("Peso actual: %.2f \n",peso);
+		
+		System.out.printf("Altura: %.2f \n",alt);
+		
+		System.out.println("--------------------------------------------------------");
+		
+		System.out.printf("Su índice de masa corporal es del %.2f \n",indMasCorp);
+		
+		System.out.println("Gracias por usar el programa.");
+
+	}
+
+}

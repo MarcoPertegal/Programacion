@@ -1,0 +1,55 @@
+package ejercicios_13;
+
+import utilidades.copy.Leer;
+
+public class Principal 
+{
+
+	public static void main(String[] args) 
+	{
+		String empl= "John Snow", refr= "Coca Cola", pip= "bolsa de pipas", esp= "Garra";
+		
+		int cantCoke, cantPip, cantEsp;
+		
+		double preCoke=0.70, prePip=0.40, preEsp= 150, coke=0, pipa=0, espa=0, total=0;
+		
+		System.out.println("Bienvenido al programa para calcular el precio de la compra.");
+		
+		System.out.println("Por favor, introduzca la cantida de latas de Cocacola.");
+		
+		cantCoke=Leer.datoInt();
+		
+		System.out.println("Por favor, introduzca la cantidad de paquetes de pipas.");
+		
+		cantPip=Leer.datoInt();
+		
+		System.out.println("Por favor, introduzca la cantidad de Garras.");
+		
+		cantEsp=Leer.datoInt();
+		
+		coke=cantCoke*preCoke;
+		
+		pipa=cantPip*prePip;
+		
+		espa=cantEsp*preEsp;
+		
+		total=coke*pipa*espa;
+		
+		System.out.println("EMPLEADO: "+empl);
+		
+		System.out.println("Descripción \t\t Cantidad \t\t Unidad \t\t Importe");
+		
+		System.out.println("----------------------------------------------------------------------------------------");
+		
+		System.out.printf("%s \t\t %d \t\t\t %.2f $ \t\t\t %.2f $ \n" ,refr,cantCoke,preCoke,coke);
+		
+		System.out.printf("%s \t\t %d \t\t\t %.2f $ \t\t\t %.2f $ \n" ,pip,cantPip,prePip,pipa);
+		
+		System.out.printf("%s \t\t\t %d \t\t\t %.2f $ \t\t\t %.2f $ \n" ,esp,cantEsp,preEsp,espa);
+		
+		System.out.println("----------------------------------------------------------------------------------------");
+		
+		System.out.printf("TOTAL \t\t\t\t\t\t\t\t\t\t %.2f $" ,total);
+	}
+
+}

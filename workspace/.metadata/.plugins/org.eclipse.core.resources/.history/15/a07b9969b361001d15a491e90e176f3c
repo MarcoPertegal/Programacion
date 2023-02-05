@@ -1,0 +1,92 @@
+package menu;
+
+import utilidades.Leer;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String [] obj={"Camiseta del betis de Nono", "Silla de Dani", "Tablet de Pilar", "Desodorante de Miguel", "Teclado de Tomás", "Capibara de Rafa", "Camisa de cuadros de Ángel", "Gallipato de Roberto", "Cascos de Lolo", "Canet de Miguel", "Botella de Rafa"};
+		String nom="";
+		double [] precio;
+		double valTot=0;
+		int tope=0, tope0=0,idUnidad=0;
+		int [] unidades;
+		
+		unidades= new int [obj.length];
+		precio= new double [obj.length];
+		
+		System.out.println("Introduzca su nombre:");
+		nom=Leer.dato();
+		
+		do {
+			System.out.println("----------------------------------------------------------------");
+			System.out.println("Bievenido "+nom+", ¿Qué operación que desea realizar?:");
+			System.out.println("----------------------------------------------------------------");
+			System.out.println("0.Pulse 0 para salir del programa.");
+			System.out.println("1.Pulse 1 para gestiornar el almacén.");
+			System.out.println("2.Pulse 2 para agregar un objeto.");
+			System.out.println("3.Pulse 3 para sacar un objeto.");
+			System.out.println("4.Pulse 4 para cambiar el precio de un producto.");
+			System.out.println("................................................................");
+			tope=Leer.datoInt();
+			switch (tope) {
+			case 0:
+				System.out.println("Saliendo del programa.");
+				break;
+			case 1:
+				System.out.println("-------------------------");
+				System.out.println("¿Qué desea gestionar?:");
+				System.out.println("-------------------------");
+				System.out.println("1.Pulse 1 para mostrar el contenido del almacén.");
+				System.out.println("2.Pulse 2 para agregar un nuevo objeto al almacén.");
+				System.out.println("3.Pulse 3 para sacar un producto del almacén.");
+				System.out.println("4.Pulse 4 para cambiar el precio de un objeto.");
+				System.out.println("5.Pulse 5 para volver al menú principal.");
+				System.out.println("................................................");
+				tope0=Leer.datoInt();
+				
+				switch (tope0) {
+				case 1:
+					idUnidad=0;
+					System.out.println("Mostrando el contenido del almacén:");
+					System.out.println("------------------------------------------------------");
+					System.out.println("Id\tCosas\tUnidades\tPrecios");
+					for (int i = 0; i < obj.length; i++) {
+						System.out.printf("%d\t%s\t%d\t\t%.2f\n",idUnidad,obj[i],unidades[i],precio[i]);
+						idUnidad++;
+					}
+					break;
+				case 2:
+					System.out.println("¿Que producto desea agregar?");//en un espacio ya ocupado o en uno vacio?
+					break;
+				case 3:
+					System.out.println("¿Que producto desea sacar?");
+					break;
+				case 4:
+					System.out.println("¿A qué producto desea cambiar el precio?");
+					break;
+				case 5:
+					System.out.println("Volviendo al menú principal");
+				default:
+					System.out.println("OPCIÓN DESCONOCIDA");
+					break;
+				} 
+				break;
+			case 2:
+				System.out.println("Valor actual.");
+				System.out.printf("El valor total del almacén es de :%.2f euros.\n",valTot);
+				break;
+			case 3:
+				System.out.println("Provabilidad de robo.");
+			default:
+				System.out.println("NÚMERO DESCONOCIDO");
+				break;
+			}
+		} while (tope != 0);
+		System.out.println("Gracias por usar el programa.");
+		}
+	}
+
+		

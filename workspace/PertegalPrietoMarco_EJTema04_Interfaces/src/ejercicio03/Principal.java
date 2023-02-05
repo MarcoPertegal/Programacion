@@ -1,0 +1,17 @@
+package ejercicio03;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		double [] num = new double[5];
+		ArrayReales a = new ArrayReales(num);
+		
+		a.rellenarArray();
+		System.out.println(a);
+		System.out.println(a.calcularMinimo());
+		System.out.println(a.calcularMaximo());
+		System.out.println(a.calcularSumatorio());
+	}
+
+}

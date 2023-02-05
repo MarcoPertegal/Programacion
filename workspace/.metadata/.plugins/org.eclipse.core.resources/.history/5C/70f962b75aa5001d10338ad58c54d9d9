@@ -1,0 +1,31 @@
+package ejercicio03;
+
+import java.util.Arrays;
+
+public class ArrayReales {
+	private double [] num;
+
+	public ArrayReales(double[] num) {
+		super();
+		this.num = num;
+	}
+
+	public double[] getNum() {
+		return num;
+	}
+
+	public void setNum(double[] num) {
+		this.num = num;
+	}
+
+	@Override
+	public String toString() {
+		return "ArrayReales [num=" + Arrays.toString(num) + "]";
+	}
+	
+	public void [] rellenarArray() {
+		int desde= 0, hasta= 9;
+		Random rand = new Random(System.nanoTime());
+		
+	}
+}

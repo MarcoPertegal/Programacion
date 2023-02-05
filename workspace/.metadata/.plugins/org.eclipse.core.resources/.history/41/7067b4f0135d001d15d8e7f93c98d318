@@ -1,0 +1,20 @@
+package menu;
+
+import utilidades.Leer;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String camBet="Camiseta del betis de JoseCa", silla="Silla de Dani", table="Tablet de Pilar", desod="Desodorante", tecl="Teclado de Tomás", nom="";
+		String capi="Capibara de Rafa", camCuad="Camisa de cuadros de Ángel", gall="Gallipato de Roberto", cas="Cascos de Lolo", carn="Canet de Miguel", bot="Botella de Rafa";
+		double preCamBet=79.95, preSilla=1399, preTable=299.99, preDesod=8, preTecl=5, preCapi= 800, preCamCuad=29.95, preGall=400, preCas=13;
+		double preCarn=1200, preBot=3, valTot=0;
+		int tope=0, tope0=0,undCamBet=0, undSilla=0, undTable=0, undDesod=0, undTecl=0, undCapi=0, undCamCuad=0, undGall=0, undCas=0, undCarn=0, undBot=0;
+		
+		System.out.println("Introduzca su nombre:");
+		nom=Leer.dato();
+		
+		do {
+			System.out.println("------------------------------------------------

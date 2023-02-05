@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;utilidades&apos; to &apos;ExamT3Parte2MarcoPertegal/src&apos;&#x0D;&#x0A;- Original project: &apos;PertegalPrietoMarco_EJTema03_ArraysDeObjetos&apos;&#x0D;&#x0A;- Destination element: &apos;ExamT3Parte2MarcoPertegal/src&apos;&#x0D;&#x0A;- Original element: &apos;PertegalPrietoMarco_EJTema03_ArraysDeObjetos/src/utilidades&apos;" description="Copy package" destination="=ExamT3Parte2MarcoPertegal/src" element1="/src&lt;utilidades" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1674201695802" version="1.0"/>
+</session>

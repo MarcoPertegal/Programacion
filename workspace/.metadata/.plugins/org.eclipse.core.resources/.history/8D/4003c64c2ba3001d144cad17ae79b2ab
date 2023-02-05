@@ -1,0 +1,8 @@
+package ejercicio05;
+
+import java.util.Arrays;
+
+public class Oficina {
+	private ListaDeEmpleados [] lista;
+	
+}

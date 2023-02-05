@@ -1,0 +1,39 @@
+package ejercicios_05;
+
+import java.util.Random;
+
+import utilidades.Leer;
+
+
+public class Principal 
+{
+
+	public static void main(String[] args) 
+	{
+		int tam=0, hasta=0, desde=0, sum=0;
+		int [] array;
+		Random num=new Random(System.nanoTime());
+		
+		System.out.println("Bienvenido al programa para calcular la suma y hallar el mayor y el menor de una serie de números aleatorios.");
+		System.out.println("--------------------------------");
+		System.out.println("Introduzca el tamaño del array.");
+		System.out.println("---------------------------------");
+		tam=Leer.datoInt();
+		
+		array= new int [tam];
+		System.out.println("Introduzca los dos valores entre los que quiere generar los números aleatorios.");
+		System.out.println("DESDE:");
+		desde=Leer.datoInt();
+		System.out.println("HASTA:");
+		hasta=Leer.datoInt();
+		for (int i = 0; i < array.length; i++) {
+			array[i]= num.nextInt(hasta-desde+1)-desde;
+		}
+		//para mostrar la suma
+		for (int i = 0; i < array.length; i++) {
+			sum += array[i];
+		}
+		System.out.println("La suma es "+sum);
+	}
+
+}

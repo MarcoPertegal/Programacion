@@ -1,0 +1,4 @@
+xception.occurrences" commandName="Search Exception Occurrences in File" description="Search for exception occurrences of a selected exception type" category="_lo3bmU-_Ee2DIO1Wg49qCw"/>
+  <commands xmi:id="_lo3aKk-_Ee2DIO1Wg49qCw" elementId="org.eclipse.debug.ui.command.prevpage" commandName="Previous Page of Memory" description="Load previous page of memory" category="_lo3bfk-_Ee2DIO1Wg49qCw"/>
+  <commands xmi:id="_lo3aK0-_Ee2DIO1Wg49qCw" elementId="org.eclipse.jdt.debug.ui.commands.ForceReturn" commandName="Force Return" description="Forces return from method with value of selected expression " category="_lo3bfk-_Ee2DIO1Wg49qCw"/>
+  <commands xmi:id="_lo3aLE-_Ee2DIO1Wg49qCw" elementId="org.eclipse.ui.ide.configureFilters" commandNa

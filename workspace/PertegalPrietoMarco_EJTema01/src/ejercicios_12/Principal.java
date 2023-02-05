@@ -1,0 +1,22 @@
+package ejercicios_12;
+
+public class Principal 
+{
+
+	public static void main(String[] args) 
+	{
+		
+	double i=0.0, r=0.0, v=250, k=20.0;
+	
+	System.out.println("Bienvenido al programa vamos a calcular la intensiad de que circula por el circuito electrónico.");
+	System.out.println("");
+	r=k*Math.pow(10,3);
+	
+	i=v/r;
+	
+	System.out.printf("La intensidad que circula por el circuíto electrónico es %.2f \n",i);
+	System.out.println("");
+	System.out.println("Gracias por utilizar el programa.");
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;utilidades&apos; to &apos;PertegalPrietoMarco_EJTema04_Herencia/src&apos;&#x0D;&#x0A;- Original project: &apos;EjemplosTema04Herencias&apos;&#x0D;&#x0A;- Destination element: &apos;PertegalPrietoMarco_EJTema04_Herencia/src&apos;&#x0D;&#x0A;- Original element: &apos;EjemplosTema04Herencias/src/utilidades&apos;" description="Copy package" destination="=PertegalPrietoMarco_EJTema04_Herencia/src" element1="/src&lt;utilidades" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1674563633464" version="1.0"/>
+</session>

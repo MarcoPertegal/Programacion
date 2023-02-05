@@ -1,0 +1,21 @@
+package ejercicio_2;
+
+public class Principal {
+
+	public static void main(String[] args) {
+	
+		int largo=45, ancho=21, area=0, volumen=0;
+		double profundidad=2.50;
+		
+		System.out.println("Hola, bienvenido al programa.");
+		
+		area=largo*ancho;
+		
+		System.out.println("El area de la piscina es " +area);
+		
+		volumen=largo*ancho*profundidad;
+		
+		System.out.println("Gracias por usar el programa.");
+	}
+
+}

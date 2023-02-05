@@ -1,0 +1,26 @@
+package ejemploPolimorfismo;
+
+public class OperacionesFiguras {
+	//esto pasa porque elmmetodo está reescrito en la clase igurta por lo que no necesitamos saber de que tipo
+	//es esa figura si un cuadrado un circulo triangulo...., porque cuando el usuario use el programa 
+	//no sabemos que figura va a querer calcular el area 
+	//la herencia suele usarse con clases pojo
+	
+	//este mnetodo importante siempre se olvida 
+	//estos metodos son las demandas del enunciado
+	public double calcularElAreaDeUnaFigura (Figura f) {
+		return f.calcularArea();
+	}
+	
+	public double sumarAreas(Figura [] lista) {
+		double resultado =0;
+		
+		for (int i = 0; i < lista.length; i++) {
+			resultado = resultado + calcularElAreaDeUnaFigura(lista[i]);
+			//nos solemos equibocar usando esta forma es mejor la de arriva, 
+			//resultado = resultado + lista[i].calcularArea();
+		}
+		return resultado;
+	}
+	
+}

@@ -1,0 +1,24 @@
+package ejercicio_04;
+
+public class Principal 
+{
+
+	public static void main(String[] args) 
+	{
+	int sala;
+	double salaEst=5.50, salaJuni=7.00, salaTres=9.50, salaVip=11.00;
+	
+	System.out.println("////////////////////////////////");
+	System.out.println("Bienvenido a CINES AL-ANDALUS");
+	System.out.println("////////////////////////////////");
+	System.out.println("");
+	System.out.println("Salas disponibles:");
+	System.out.println("----------------------------------");
+	System.out.printf("Sala Estandar \t\t\t %.2f euros \n",salaEst);
+	System.out.printf("Sala Junior \t\t\t %.2f euros \n",salaJuni);
+	System.out.printf("Sala 3D \t\t\t %.2f euros \n",salaTres);
+	System.out.printf("Sala VIP \t\t\t %.2f euros \n",salaVip);
+
+	}
+
+}

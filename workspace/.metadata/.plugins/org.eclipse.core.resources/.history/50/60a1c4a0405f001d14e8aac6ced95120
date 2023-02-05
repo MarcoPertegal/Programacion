@@ -1,0 +1,6 @@
+lp" name="Help"/>
+  <categories xmi:id="_2bDiDmAkEe2zyeqn_lhkgw" elementId="org.eclipse.ui.category.project" name="Project"/>
+  <categories xmi:id="_2bDiD2AkEe2zyeqn_lhkgw" elementId="org.eclipse.tm.terminal.category1" name="Terminal view commands" description="Terminal view commands"/>
+  <categories xmi:id="_2bDiEGAkEe2zyeqn_lhkgw" elementId="org.eclipse.search.ui.category.search" name="Search" description="Search command category"/>
+  <categories xmi:id="_2bDiEWAkEe2zyeqn_lhkgw" elementId="org.eclipse.egit.ui.commandCategory" name="Git"/>
+  <categories xmi:id="_2bDiEmAkEe2zyeqn_lhkgw" elementId="org.eclipse.datatools.sqltools.sqleditor.category" name="Database

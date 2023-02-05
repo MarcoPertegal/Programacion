@@ -1,0 +1,143 @@
+package menu;
+
+import utilidades.Leer;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String [] obj={"Camiseta del betis de Nono", "Silla de Dani\t\t", "Tablet de Pilar\t\t", "Desodorante de Miguel\t", "Teclado de Tomás\t", "Capibara de Rafa\t", "Camisa de cuadros de Ángel", "Gallipato de Roberto\t", "Cascos de Lolo\t\t", "Canet de Miguel\t\t", "Botella de Rafa\t\t"};
+		String nom="";
+		double [] precio;
+		double valTot=0;
+		int tope=0, tope0=0,tope1=0, idUnidad=0;
+		int [] unidades;
+		
+		unidades= new int [obj.length];
+		precio= new double [obj.length];
+		
+		
+
+		System.out.printf("\t\t\t\t\t████████╗███████╗██████╗  ██████╗ ██████╗  ██████╗     ███████╗   ██╗     \r\n"
+				+ "\t\t\t\t\t╚══██╔══╝██╔════╝██╔══██╗██╔═══██╗██╔══██╗██╔═══██╗    ██╔════╝   ██║     \r\n"
+				+ "\t\t\t\t\t  ██║   █████╗  ██████╔╝██║   ██║██████╔╝██║   ██║    ███████╗   ██║     \r\n"
+				+ "\t\t\t\t\t   ██║   ██╔══╝  ██╔══██╗██║   ██║██╔══██╗██║   ██║    ╚════██║   ██║     \r\n"
+				+ "\t\t\t\t\t   ██║   ███████╗██║  ██║╚██████╔╝██████╔╝╚██████╔╝    ███████║██╗███████╗\r\n"
+				+ "\t\t\t\t\t   ╚═╝   ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝     ╚══════╝╚═╝╚══════╝");
+		
+		do {
+			System.out.println("");
+			System.out.println("");
+			System.out.println("█ Bievenido, ¿Qué operación que desea realizar?:");
+			System.out.println("////////////////////////////////////////////////////////");
+			System.out.println("");
+			System.out.println("0.Pulse 0 para salir del programa.");
+			System.out.println("1.Pulse 1 para gestiornar el almacén.");
+			System.out.println("2.Pulse 2 para ver el valor actual.");
+			System.out.println("3.Pulse 3 para ver la probabilidad de robo.");
+			System.out.println("--------------------------------------------------------");
+			tope=Leer.datoInt();
+			switch (tope) {
+				case 0:
+					System.out.println("");
+					System.out.println("Saliendo del programa.");
+					System.out.println("");
+					break;
+				case 1:
+					
+					System.out.println("");
+					System.out.println("█ ¿Qué desea gestionar?:");
+					System.out.println("////////////////////////////////////////////////////");
+					System.out.println("");
+					System.out.println("0.Pulse 0 para volver al menú principal.");
+					System.out.println("1.Pulse 1 para mostrar el contenido del almacén.");
+					System.out.println("2.Pulse 2 para agregar un nuevo objeto al almacén.");
+					System.out.println("3.Pulse 3 para sacar un producto del almacén.");
+					System.out.println("4.Pulse 4 para cambiar el precio de un objeto.");
+					System.out.println("5.Pulse 5 para ubicar un objeto.");
+					System.out.println("----------------------------------------------------");
+					tope0=Leer.datoInt();
+				
+				switch (tope0) {
+					case 1:
+						idUnidad=0;
+						System.out.println("Mostrando el contenido del almacén:");
+						System.out.println("**************************************");
+						System.out.println("");
+						System.out.println("Id\tOBJETOS\t\t\t\tUNIDADES\tPRECIOS");
+						for (int i = 0; i < obj.length; i++) {
+							System.out.printf("%d\t%s\t%d\t\t%.2f $\n",idUnidad,obj[i],unidades[i],precio[i]);
+							idUnidad++;
+						}
+					break;
+					case 2:
+						System.out.println("¿Que producto desea agregar?");
+						break;
+					case 3:
+						System.out.println("¿Que producto desea sacar?");
+						break;
+					case 4:
+						System.out.println("¿A qué producto desea cambiar el precio?");
+						break;
+					case 0:
+						System.out.println("");
+						System.out.println("Volviendo al menú principal");
+						System.out.println("");
+						break;
+					case 5:
+						System.out.println("█ ¿Qué acción desea realizar?");
+						System.out.println("/////////////////////////////////////////////");
+						System.out.println("");
+						System.out.println("0.Pulse 0 para volver.");
+						System.out.println("1.Pulse 1 para ver la ubicación del artitculo.");
+						System.out.println("2.Pulse 2 para mostrar el contenido de la estantería.");
+						System.out.println("---------------------------------------------");
+						tope1=Leer.datoInt();
+						switch (tope1) {
+							case 0:
+								System.out.println("Volviendo al menú.");
+								break;
+							case 1:
+								System.out.println("Mostrando la ubicación del artículo.");
+								break;
+							case 2:
+								System.out.println("Mostrando contenido de la estantería.");
+								break;
+							default:
+								System.out.println("");
+								System.out.println("OPCIÓN DESCONOCIDA");
+								System.out.println("");
+								break;
+						}
+						break;
+					
+					default:
+						System.out.println("");
+						System.out.println("OPCIÓN DESCONOCIDA");
+						System.out.println("");
+						break;
+				}
+				 
+				break;
+				case 2:
+					System.out.println("Valor actual.");
+					System.out.printf("El valor total del almacén es de :%.2f euros.\n",valTot);
+					break;
+				case 3:
+					System.out.println("Provabilidad de robo.");
+					break;
+				default:
+					System.out.println("");
+					System.out.println("NÚMERO DESCONOCIDO");
+					System.out.println("");
+					break;
+			}
+		} while (tope != 0);
+		System.out.println("Gracias por usar el programa.");
+		}
+	}
+
+ 
+
+		

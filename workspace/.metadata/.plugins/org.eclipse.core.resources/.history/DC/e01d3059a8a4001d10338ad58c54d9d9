@@ -1,0 +1,19 @@
+package ejercicio05;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Empleado[]lista = new Empleado[3];
+		
+		Oficina o = new Oficina(lista);
+		
+		lista[0] = new Gerente("Antonio", "Pérez", 1000, 2342, 25);
+		lista[1] = new Vendedor("Francisco", "Romero", 1200, 3213, 16, 20);
+		lista[2] = new Empleado("Pablo", "García", 1500, 4352);
+		
+		System.out.println(o.calcularGasto()); 
+		
+
+	}
+
+}

@@ -1,0 +1,57 @@
+package ejercicio03;
+
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.Random;
+
+public class ArrayReales implements Estadisticas{
+	private double [] num;
+
+	public ArrayReales(double[] num) {
+		super();
+		this.num = num;
+	}
+
+	public double[] getNum() {
+		return num;
+	}
+
+	public void setNum(double[] num) {
+		this.num = num;
+	}
+
+	@Override
+	public String toString() {
+		return "ArrayReales [num=" + Arrays.toString(num) + "]";
+	}
+	
+	public void rellenarArray() {
+		int desde= 0, hasta= 9;
+		Random rand = new Random(System.nanoTime());
+		for (int i = 0; i < num.length; i++) {
+			num[i] = rand.nextDouble(hasta-desde+1)+desde;
+		}
+	}
+
+	@Override
+	public double calcularMinimo() {
+		double minimo = 0;
+		for (int i = 0; i < num.length; i++) {
+			num[i] = minimo;
+			
+		}
+		return 0;
+	}
+
+	@Override
+	public double calcularMaximo() {
+		return 0;
+	}
+
+	@Override
+	public double calcularSumatorio() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

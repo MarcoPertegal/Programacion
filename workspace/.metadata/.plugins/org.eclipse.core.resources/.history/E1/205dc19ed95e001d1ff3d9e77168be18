@@ -1,0 +1,11 @@
+package menu;
+
+import utilidades.Leer;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String camBet="Camiseta del betis de JoseCa", silla="Silla de Dani", table="Tablet de Pilar", desod="Desodorante", tecl="Teclado de Tomás", nom="";
+		String capi="Capibara de Rafa", camCuad="Camisa de cuadros de Ángel", gall="Gallipato de Roberto", cas="Cascos de Lolo", carn="C

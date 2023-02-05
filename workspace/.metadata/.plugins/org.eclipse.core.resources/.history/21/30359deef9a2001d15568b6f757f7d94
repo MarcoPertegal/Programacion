@@ -1,0 +1,24 @@
+package ejercicio04;
+
+public class Alimentacion extends Producto {
+	
+	private double peso;
+	
+	public Alimentacion(double precioUni, String nombre, String id, double peso) {
+		super(precioUni, nombre, id);
+		this.peso = peso;
+	}
+	public double getPeso() {
+		return peso;
+	}
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+	@Override
+	public String toString() {
+		return "Alimentacion [peso=" + peso + "]";
+	}
+	
+
+	
+}

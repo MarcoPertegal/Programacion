@@ -1,0 +1,13 @@
+package ejercicio03;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		ArrayReales a = new ArrayReales();
+		
+		a.rellenarArray();
+		
+	}
+
+}

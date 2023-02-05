@@ -1,0 +1,31 @@
+package ejercicio04;
+
+public class Ropa extends Producto {
+	private String seccion;
+
+	public Ropa(double precioUni, String nombre, String id, String seccion) {
+		super(precioUni, nombre, id);
+		this.seccion = seccion;
+	}
+
+	public String getSeccion() {
+		return seccion;
+	}
+
+	public void setSeccion(String seccion) {
+		this.seccion = seccion;
+	}
+
+	@Override
+	public String toString() {
+		return "Ropa [seccion=" + seccion + "]";
+	}
+
+	@Override
+	public double calcularPrecioUni() {
+		return super.getPrecioUni();
+	}
+	
+	
+	
+}

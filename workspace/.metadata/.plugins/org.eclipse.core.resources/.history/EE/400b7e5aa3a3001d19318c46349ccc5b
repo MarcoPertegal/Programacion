@@ -1,0 +1,17 @@
+package ejercicio05;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Empleado[]lista = new Empleado[3];
+		
+		Empleado e;
+		Empleado e1 = new Vendedor("Francisco", "Romero", 1200, 3213, 16, 20);
+		Empleado e2 = new Empleado("Pablo", "García", 1500, 4352);
+		
+		Oficina o = new Oficina(e= new Gerente("Antonio", "Pérez", 1000, 2342, 25);
+		
+
+	}
+
+}

@@ -1,0 +1,39 @@
+package ejercicio_ex;
+
+import utilidades.Leer;
+
+public class Principal 
+{
+
+	public static void main(String[] args) 
+	{
+	
+		//calcula el NE de una persona cuyas deudas del mes (datos teclado) hipoteca casa y pagar cuota del coche a plazos
+		//ingrso 1200 euros mensuale
+		
+		int mult=100;
+		
+		double ne1=0.0, deuDeMes=0.0, hipCasa, cuotCoche, nom=1200, ne2=0.0;
+		
+		System.out.println("Bienvenido al programa para calcular el nivel de endeudamiento.");
+		
+		System.out.println("-------------------------------------------------------------------");
+		
+		System.out.println("Por favor, introduzca el gasto de la hipoteca del mes.");
+		
+		hipCasa=Leer.datoDouble();
+		
+		System.out.println("Por favor, introduzca el gasto de la cuota del coche de este mes.");
+		
+		cuotCoche=Leer.datoDouble();
+		
+		ne1=(hipCasa+cuotCoche)/nom;
+		
+		ne2=ne1*mult;
+		
+		System.out.printf("Su nivel de endeudamiento este mes es de %2.f euros /n",ne2);
+		
+		
+	}
+
+}

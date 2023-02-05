@@ -1,0 +1,29 @@
+package ejercicio_03;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		String empl= "Marco Pertegal", fecha= "19/10/2022", pat= "Patatas medianas", beb= "Bebida mediana", ham= "Hamburguesa Mc Royal";
+		
+		double prePatMed=2, preBebMed=2.50, hamMacRoy=6.50, totPag=0.0, cantEntreg, cambio=0.0, und=1;
+		
+		totPag=prePatMed+preBebMed+hamMacRoy;
+		
+		System.out.println("Empreado "+empl);
+		
+		System.out.println("Fecha: "+fecha);
+		
+		System.out.println("----------------------------------------------");
+		
+		System.out.println("UND           ARTICULO             TOTAL");
+		
+		
+		cambio=cantEntreg-totPag; //esto va despues del tiquet a forma de pregunta al clientr por lo que hay que poner un leer
+		
+		
+				
+				
+	}
+
+}

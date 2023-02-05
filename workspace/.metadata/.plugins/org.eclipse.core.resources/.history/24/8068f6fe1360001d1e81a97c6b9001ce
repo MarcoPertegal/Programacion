@@ -1,0 +1,20 @@
+package ejemplo_arrays_bidimensional;
+
+public class Principal 
+{
+
+	public static void main(String[] args) 
+	{
+		// i+j es para rellenar lo que va dentro de cada hueco deol array, cambiarlo por .Leer para rellenarlo manualmente
+		int fil=5, col=8;
+		int [][] miTabla=new int[fil][col];
+		//para rellenarlo
+		for (int i = 0; i < miTabla.length; i++) {//este for sirbe para saltar a la fila de abajo, la i representa el número de filas
+			for (int j = 0; j < miTabla[i].length; j++) {//este for es para saltar cada hueco de la fila, IMPORTANTE poner [i] eso representa el tamaño de la fila
+				miTabla[i][j]=i+j;
+			}
+		}
+
+	}
+
+}

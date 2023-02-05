@@ -1,0 +1,29 @@
+package ejercicio_02;
+
+import utilidades.Leer;
+
+public class Principal 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		// velocidad constante, espacio inicial 5.5m, velocidad constante 3.2m/s
+		
+		double tiObjet, esp=0.0, espInic=5.5, velConst=3.2;
+		
+		System.out.println("Hola, bienvenido al programa para calcular el espacio recorrido por una zapatilla.");
+		
+		tiObjet=Leer.datoDouble();
+		
+		esp=espInic+velConst*tiObjet;
+		
+		System.out.printf("El espacio recorrido es %.2f metros. /n",esp);
+		
+		System.out.println("Gracias por usar el programa.");
+		
+		
+		
+	}
+
+}

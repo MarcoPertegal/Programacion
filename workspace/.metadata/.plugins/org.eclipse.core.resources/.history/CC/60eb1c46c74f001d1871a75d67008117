@@ -1,0 +1,21 @@
+package ejercicio_15;
+
+import utilidades.Leer;
+
+public class Principal 
+{
+
+	public static void main(String[] args) 
+	{
+		int tope=0, cantSum=0, cantMult=0, cero=0;
+		double restaResult=0.0, sumaNum=0.0, sumaNum0=0.0, restaNum1=0.0, restaNum2=0.0, multNum=0.0, multNum1=1.0;
+		double divNum1=0.0, divNum2=0.0, divResult=0.0, caso5=0.0, div=2.0, resultCaso5=0.0;
+		
+		System.out.println("////////////////////////////////");
+		System.out.println("Bienvenido a la MINI-CALCULADORA");
+		System.out.println("////////////////////////////////");
+		do {
+			System.out.println("");
+			System.out.println("---------------------------------------------------");
+			System.out.println("Por favor, indique la operación que desea realizar:");
+			System.out.println("------------------------------

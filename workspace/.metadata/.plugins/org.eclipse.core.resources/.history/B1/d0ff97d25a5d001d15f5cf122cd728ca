@@ -1,0 +1,30 @@
+package ejercicio_01;
+
+import java.util.Random;
+
+import utilidades.copy.Leer;
+
+public class Principal 
+{
+
+	public static void main(String[] args) 
+	{
+		int tam=5, cero=0, desde=0, hasta=3000, caso=0, totalCal=0, suma=0, numDias=0, calRecom=2200;
+		double media=0;
+		int [] nums={2980, 1389, 2097, 1789, 583};
+		Random rd=new Random(System.nanoTime());
+		
+		System.out.println("///////////////////////////////////////////////////////////");
+		System.out.println("Bienvenido al programa que gestiona el número de calorías.");
+		System.out.println("///////////////////////////////////////////////////////////");
+		System.out.println("");
+		//System.out.println("Introduzca la cantidad de días que quiere guardar las calorías:");
+		//tam=Leer.datoInt();
+		nums= new int [tam];
+		do {
+			
+			System.out.println("");
+			System.out.println("OPCIONES DISPONIBLES:");
+			System.out.println("------------------------------------------------------------------------");
+			System.out.println("0.Pulse 0 para salir.");
+	

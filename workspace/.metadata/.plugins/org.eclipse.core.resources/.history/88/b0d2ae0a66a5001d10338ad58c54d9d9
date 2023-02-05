@@ -1,0 +1,15 @@
+package ejercicio03;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Array num = new Array[4];
+		ArrayReales a = new ArrayReales();
+		
+		a.rellenarArray();
+		System.out.println(a);
+		
+	}
+
+}

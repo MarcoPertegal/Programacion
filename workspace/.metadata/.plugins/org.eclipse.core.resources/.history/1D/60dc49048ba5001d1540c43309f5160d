@@ -1,0 +1,20 @@
+package ejercicio04;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//se crea una venta
+		//y un array de lineas de venta, 
+		
+		LineaDeVenta [] lista = new LineaDeVenta [3];
+		Venta v = new Venta (lista);
+		
+		lista[0] = new Producto(2, "Manzana", "ma1");
+		
+		
+		
+		
+	}
+
+}

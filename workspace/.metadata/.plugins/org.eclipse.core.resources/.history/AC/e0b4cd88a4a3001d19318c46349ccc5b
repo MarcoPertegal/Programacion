@@ -1,0 +1,35 @@
+package ejercicio04;
+
+import java.util.Arrays;
+
+//el tiquet entero
+public class Venta {
+	private LineaDeVenta [] lista;
+
+	public Venta(LineaDeVenta[] lista) {
+		super();
+		this.lista = lista;
+	}
+
+	public Venta() {
+		super();
+	}
+
+	public LineaDeVenta[] getLista() {
+		return lista;
+	}
+
+	public void setLista(LineaDeVenta[] lista) {
+		this.lista = lista;
+	}
+
+	@Override
+	public String toString() {
+		return "Venta [lista=" + Arrays.toString(lista) + "]";
+	}
+	//lo de imprimir si le queda poco para cadurar se hace con un inf en el metodo que imprime el tiquet
+	if(LineaDeVenta[i].getP() instaneof Alimentacion) {
+		
+	}
+	
+}

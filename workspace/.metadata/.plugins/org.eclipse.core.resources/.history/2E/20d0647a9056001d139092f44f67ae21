@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Instrumentos</title>
+</head>
+<body>
+	<h1>Instrumentos</h1>
+
+	
+	<img src="../img/instrumentos.jpg" width="400" height="337" border="0" usemap="#map" />
+
+	<map name="map">
+	<area shape="poly" coords="0,1,1,185,92,183,97,1" href="./calephone.html" />
+	<area shape="poly" coords="93,183,251,164,249,3,97,2" href="file:///C:/Users/Admin/Desktop/recursos/HTML%20Pertegal%20Prieto%20Marco/cellos.html" />
+	<area shape="poly" coords="250,3,252,162,393,163,392,1" href="file:///C

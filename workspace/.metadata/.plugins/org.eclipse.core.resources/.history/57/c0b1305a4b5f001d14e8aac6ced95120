@@ -1,0 +1,5 @@
+ts." category="_8k9MS2AmEe2zyeqn_lhkgw"/>
+  <commands xmi:id="_8k9LwGAmEe2zyeqn_lhkgw" elementId="AUTOGEN:::org.eclipse.emf.mapping.ecore2ecore.presentation.Ecore2EcoreContributionID/org.eclipse.emf.mapping.action.TypeMatchMappingActionID" commandName="Match Mapping by Type" description="Create child mappings automatically by type." category="_8k9MS2AmEe2zyeqn_lhkgw"/>
+  <commands xmi:id="_8k9LwWAmEe2zyeqn_lhkgw" elementId="AUTOGEN:::org.eclipse.emf.mapping.ecore2ecore.presentation.Ecore2EcoreContributionID/org.eclipse.emf.mapping.action.NameMatchMappingActionID" commandName="Match Mapping by Name" description="Create child mappings automatically by name." category="_8k9MS2AmEe2zyeqn_lhkgw"/>
+  <commands xmi:id="_8k9LwmAmEe2zyeqn_lhkgw" elementId="AUTOGEN:::org.eclipse.emf.mapping.ecore2ecore.presentation.Ecore2EcoreContributionID/org.eclipse.emf.mapping.action.CreateOneSidedMappingActionID" commandName="Create One-sided Mapping" description="Create a new mapping for the selected object." category="_8k9MS2AmEe2zyeqn_lhkgw"/>
+  <commands xmi:id="_8k9Lw2AmEe2zyeqn_lhkgw" elementId="AUTOGEN:::org.eclipse.emf.mapping.ecore2ecore.presentation.Ec

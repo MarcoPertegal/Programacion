@@ -1,0 +1,17 @@
+package ejercicio_2;
+
+public class Principal {
+
+	public static void main(String[] args) {
+	
+		int largo=45, ancho=21, area=0; 
+		
+		System.out.println("Hola, bienvenido al programa.");
+		
+		area=largo*ancho;
+		
+		System.out.println("El area es " +area+);
+		
+	}
+
+}

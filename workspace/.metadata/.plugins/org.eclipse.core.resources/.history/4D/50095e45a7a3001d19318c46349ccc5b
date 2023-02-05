@@ -1,0 +1,6 @@
+package ejercicio04;
+
+public interface IImpuesto {
+	
+	public double calcularIVA(double porcent);
+}

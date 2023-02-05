@@ -1,0 +1,21 @@
+package ejemplofor;
+
+import java.util.Iterator;
+
+public class Principal 
+{
+
+	public static void main(String[] args) 
+	{
+		int tope=0;
+		
+		for(int i=0; i<tope; i++) {
+			for (int j=0; j<tope; j++)
+					System.out.println("hola de nuevo");
+			
+			System.out.print("Hola");
+		}
+
+	}
+
+}

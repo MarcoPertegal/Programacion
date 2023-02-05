@@ -1,0 +1,71 @@
+package menu;
+
+import utilidades.Leer;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String camBet="Camiseta del betis de JoseCa", silla="Silla de Dani", table="Tablet de Pilar", desod="Desodorante", tecl="Teclado de Tomás";
+		String capi="Capibara de Rafa", camCuad="Camisa de cuadros de Ángel", gall="Gallipato de Roberto", cas="Cascos de Lolo", carn="Canet de Miguel", bot="Botella de Rafa";
+		double preCamBet=79.95, preSilla=1399, preTable=299.99, preDesod=8, preTecl=5, preCapi= 800, preCamCuad=29.95, preGall=400, preCas=13;
+		double preCarn=1200, preBot=3;
+		int tope=0;
+		
+		System.out.println("Gestionar Almacén");
+		System.out.println("////////////////////////////////////");
+		System.out.println("OBJETO \t\t\t\t\t PRECIO");
+		System.out.println("---------------------------------------------------");
+		System.out.printf("- %s \t %.2f €\n",camBet,preCamBet);
+		System.out.println("");
+		System.out.printf("- %s \t\t %.2f €\n",silla,preSilla);
+		System.out.println("");
+		System.out.printf("- %s \t\t %.2f €\n",table,preTable);
+		System.out.println("");
+		System.out.printf("- %s \t\t\t %.2f €\n",desod,preTecl);
+		System.out.println("");
+		System.out.printf("- %s \t\t %.2f €\n",capi,preCapi);
+		System.out.println("");
+		System.out.printf("- %s \t %.2f €\n",camCuad,preCamCuad);
+		System.out.println("");
+		System.out.printf("- %s \t\t %.2f €\n",gall,preGall);
+		System.out.println("");
+		System.out.printf("- %s \t\t %.2f €\n",cas,preCas);
+		System.out.println("");
+		System.out.printf("- %s \t\t %.2f €\n",carn,preCarn);
+		System.out.println("");
+		System.out.printf("- %s \t\t %.2f €\n",bot,preBot);
+
+		do {
+			System.out.println("0.Pulse 0 para salir.");
+			System.out.println("1.Pulse 1 para mostrar el contenido del almacén.");
+			System.out.println("2.Pulse 2 para agregar un nuevo objeto al almacén.");
+			System.out.println("3.Pulse 3 para sacar un producto del almacén.");
+			System.out.println("4.Pulse 4 para cambiar el precio de un objeto.");
+			tope=Leer.datoInt();
+			switch (tope) {
+			case 0:
+				System.out.println("Saliendo del programa.");
+				break;
+			case 1:
+				System.out.println("Mostrando el contenido:");
+				break;
+			case 2:
+				System.out.println("¿Que producto desea agregar?");//en un espacio ya ocupado o en uno vacio?
+				break;
+			case 3:
+				System.out.println("¿Que producto desea sacar?");
+				break;
+			case 4:
+				System.out.println("¿A qué producto desea cambiar el precio?");
+				break;
+			default:
+				System.out.println("OPCIÓN DESCONOCIDA");
+				break;
+			}
+		} while (tope != 0);
+		System.out.println("Gracias por usar el programa.");
+	}
+
+}

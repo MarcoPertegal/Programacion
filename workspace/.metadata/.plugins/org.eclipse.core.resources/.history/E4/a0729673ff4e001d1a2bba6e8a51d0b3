@@ -1,0 +1,13 @@
+package ejercicios_13;
+
+public class Principal 
+{
+
+	public static void main(String[] args) 
+	{
+		String nombre= "John Snow";
+		
+		
+	}
+
+}

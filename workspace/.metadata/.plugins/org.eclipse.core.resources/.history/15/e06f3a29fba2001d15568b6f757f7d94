@@ -1,0 +1,25 @@
+package ejercicio04;
+
+public class Electronica extends Producto {
+	private String consumo;
+
+	public Electronica(double precioUni, String nombre, String id, String consumo) {
+		super(precioUni, nombre, id);
+		this.consumo = consumo;
+	}
+
+	public String getConsumo() {
+		return consumo;
+	}
+
+	public void setConsumo(String consumo) {
+		this.consumo = consumo;
+	}
+
+	@Override
+	public String toString() {
+		return "Electronica [consumo=" + consumo + "]";
+	}
+	
+	
+}

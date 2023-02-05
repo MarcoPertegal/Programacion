@@ -1,0 +1,36 @@
+package ejercicio_13;
+
+import java.util.Iterator;
+
+import utilidades.Leer;
+
+public class Principal 
+{
+
+	public static void main(String[] args) 
+	{
+		// Realizar un programa que calcule el salario mensual de un vendedor. Este será el resultado de
+		//un sueldo fijo 1000€ mensuales más un porcentaje de las ventas realizadas. Lo que se cobra
+		//por ventas se calculará mediante el 20 % de lo vendido en total al mes.
+		
+		int tope=0, result=0, cien=100, porcent=0, num1=1, num=0;
+		
+		do {
+			
+		
+			System.out.println("Bienvenido al programa para calcular el salario mensual de un vendedor.");
+			System.out.println("///////////////////////////////////////////////////////////////////////");
+			System.out.println("Introduzca el número de ventas mensuales:");
+			System.out.println("Pulse 0 para salir.");
+		
+			tope=Leer.datoInt();
+		
+			for (int i = 0; i < tope; i++) {
+				num=num+num1;
+			}
+			System.out.println(num);
+		} while (tope !=0);
+
+	}
+
+}

@@ -1,0 +1,7 @@
+package ejercicio04;
+
+public abstract class Producto {
+	private double precioUni;
+	private String nombre;
+	private String id;
+}

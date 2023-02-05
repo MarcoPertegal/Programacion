@@ -1,0 +1,40 @@
+package ejercicio04;
+
+public class Alimentacion extends Producto {
+	
+	private int diasCad;//deberia ser un atributo este porque es una caracteristica de productos de alimentacion
+						//Debe haber un metodo que pide el enunciado de imprimir mensaje ese metodo tiene que tener un if
+
+	public Alimentacion(double precioUni, String nombre, String id, int diasCad) {
+		super(precioUni, nombre, id);
+		this.diasCad = diasCad;
+	}
+
+	public int getDiasCad() {
+		return diasCad;
+	}
+
+	public void setDiasCad(int diasCad) {
+		this.diasCad = diasCad;
+	}
+
+	@Override
+	public String toString() {
+		return "Alimentacion [diasCad=" + diasCad + "]";
+	}
+
+	@Override
+	public double calcularPrecioUni() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	public void imprimirDEscuento() {
+		if (diasCad < 2) {
+			System.out.println("Producto con descuento");
+		}
+	}
+	
+
+	
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Curriculum</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		@font-face{
+			font-family: 'FuturaStd-Book';
+			src: url('tipos/FuturaStd-Book.ttf');
+		}
+		p{
+			font-family:FuturaStd-Book;
+		}
+	</style>
+
+</head>
+<body>
+	<h1>CURRICULUM VITAE</h1>
+	<img src="img/foto.jpg" width="50%" title="Retrato">
+
+	<h2>Datos personales
