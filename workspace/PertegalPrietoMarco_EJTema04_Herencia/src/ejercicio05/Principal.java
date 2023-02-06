@@ -19,6 +19,7 @@ public class Principal {
 		System.out.println("Indique el número del empleado del que quiere saber el sueldo:");
 		buscNumEmpleado=Leer.datoInt();
 		System.out.printf("El sueldo del empleado es: %.2f \n",o.calcularSueldoDeUnEmpleado(o.findById(buscNumEmpleado)));
+		System.out.println(o);
 		
 	}
 

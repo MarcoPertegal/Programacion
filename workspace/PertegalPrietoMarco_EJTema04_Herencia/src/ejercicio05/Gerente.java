@@ -18,11 +18,11 @@ public class Gerente extends Empleado {
 
 	@Override
 	public String toString() {
-		return "Gerente [porcentImp=" + porcentImp + "]";
+		return super.toString()+"Gerente [porcentImp=" + porcentImp + "]";
 	}
 	
 	public double calcularSueldo() {
-		return getSueldoBase()-(getSueldoBase()*porcentImp)/100;
+		return super.calcularSueldo()-(super.calcularSueldo()*porcentImp)/100;
 	}
 	
 }

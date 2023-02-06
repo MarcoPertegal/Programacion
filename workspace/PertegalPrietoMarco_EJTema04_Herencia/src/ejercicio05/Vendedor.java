@@ -1,7 +1,7 @@
 package ejercicio05;
 
 public class Vendedor extends Empleado{
-	private int cantVentas;
+	private int cantVentas;//dinero de la venta con cantidad de cosas vendidas seria doble
 	private double incentivo;
 	
 	public Vendedor(String nombre, String apellido, double sueldoBase, int numEmpleado, int cantVentas,
@@ -29,17 +29,17 @@ public class Vendedor extends Empleado{
 
 	@Override
 	public String toString() {
-		return "Vendedor [cantVentas=" + cantVentas + ", incentivo=" + incentivo + "]";
+		return super.toString()+"Vendedor [cantVentas=" + cantVentas + ", incentivo=" + incentivo + "]";
 	}
 	
 	//metodos mios
 	public double calcularSueldo() {
-		return getSueldoBase()+((cantVentas*incentivo)/100);
+		return super.calcularSueldo()+((cantVentas*incentivo)/100);
 	}
 	
-	public void mensaje(int objVentas) {
+	public void comprobarIncentivo(int objVentas) {
 		if (cantVentas >= objVentas) {
-			System.out.println("Ehorabuena has alcanzado el objetivo de ventas.");
+			System.out.println("Enhorabuena has alcanzado el objetivo de ventas.");
 		}else {
 			System.out.println("No has alzanzado tu objetivo de ventas.");
 		}

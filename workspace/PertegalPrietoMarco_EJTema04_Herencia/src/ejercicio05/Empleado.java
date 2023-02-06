@@ -52,8 +52,7 @@ public class Empleado {
 				+ numEmpleado + "]";
 	}
 	
-	public double calcularSueldo() {//si no lo pongo no puedo usar el metodo en la clase oficina pero no lo puedo poner 
-									//vacio pq la clase no puede ser abstracta y si nolo pongo me da error en oficina
+	public double calcularSueldo() {//se pone esto porque sino da error, y dice que en array se tiene que guardar un empleado
 		return sueldoBase;
 	}
 	

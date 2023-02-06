@@ -23,8 +23,8 @@ public class Oficina {
 		return "Oficina [lista=" + Arrays.toString(lista) + "]";
 	}
 	
-	public double calcularSueldoDeUnEmpleado(Empleado p) {
-		if (p == null) {
+	public double calcularSueldoDeUnEmpleado(Empleado p) {//No se pueden llamar metodos iguales que los que estan reescritos fuera de la jerarquia de clases
+		if (p == null) {//el null esta puesto por si en el metodo buscar no encuentra nada
 			return 0;
 		}else {
 			return p.calcularSueldo();
@@ -38,6 +38,16 @@ public class Oficina {
 		}
 		return gasto;
 	}
+	public double calcularGastoEnElSueldoDeVendedor() {
+		double gasto = 0.0;
+		for (int i = 0; i < lista.length; i++) {
+			if (lista[i] instanceof Vendedor) {
+				gasto += calcularSueldoDeUnEmpleado(lista[i]);
+			}
+		}
+		return gasto;
+	}
+	
 	public void imprimirTodo() {
 		for (int i = 0; i < lista.length; i++) {
 			System.out.println(lista[i]);
@@ -59,5 +69,11 @@ public class Oficina {
 		else
 			return null;
 	}
+	//pra comprobar si una clase esta intanciada de una forma o otra:
+	/*if(lista[i] instaneof Vendedor) {
+	}
+	Para llamar un metodo de una clase hija que está instnaciado como la madre para rellenar un array se hace con el casteo:
+	(Vendedor)lista[i]."metodo"
+	*/
 	
 }
