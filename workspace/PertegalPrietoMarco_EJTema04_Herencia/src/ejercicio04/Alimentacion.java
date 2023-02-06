@@ -32,6 +32,13 @@ public class Alimentacion extends Producto {
 			return descuento;
 		}
 	}
+	public void imprimirMensaje() {
+		if (comprobarDescuento()) {
+			System.out.println("Producto con descuento.");
+		}else {
+			System.out.println("Producto sin descuento.");
+		}
+	}
 	public double calcularPrecioUni() {
 		double descuento= 20;
 		if (comprobarDescuento()) {

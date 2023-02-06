@@ -38,7 +38,7 @@ public class Vendedor extends Empleado{
 	}
 	
 	public void comprobarIncentivo(int objVentas) {
-		if (cantVentas >= objVentas) {
+		if (cantVentas > objVentas) {
 			System.out.println("Enhorabuena has alcanzado el objetivo de ventas.");
 		}else {
 			System.out.println("No has alzanzado tu objetivo de ventas.");

@@ -31,17 +31,14 @@ public class Venta {
 	//metodo para calcular el total de todos los productos
 	//otro para imprimir el tique entero
 	
-	/*public void imprimirTiquet() {
-		
+	public void imprimirTiquet() {
 		for (int i = 0; i < lista.length; i++) {
 			if(lista[i].getP() instanceof Alimentacion) {//instance of sirbe para cambiarle la sinstancia a la clase y poder usar el metodo imprimir emnsaje 
-				aux = (Alimentacion)lista[i].getP();
-				aux.imprimirDescuento();
+				System.out.println(((Alimentacion)lista[i].getP()).comprobarDescuento());
 			}
 		}
-		
-	}*/
-	public void imprimirTiquet () {
+	}
+	public void imprimirTiquetMal() {
 		for (int i = 0; i < lista.length; i++) {
 			lista[i].imprimirLinea();
 		}

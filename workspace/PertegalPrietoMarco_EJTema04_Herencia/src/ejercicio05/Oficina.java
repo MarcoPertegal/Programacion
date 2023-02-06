@@ -2,6 +2,8 @@ package ejercicio05;
 
 import java.util.Arrays;
 
+import ejercicio04.Alimentacion;
+
 public class Oficina {
 	private Empleado [] lista;
 
@@ -29,8 +31,8 @@ public class Oficina {
 		}else {
 			return p.calcularSueldo();
 		}
-		
 	}
+	
 	public double calcularGasto() {
 		double gasto = 0.0;
 		for (int i = 0; i < lista.length; i++) {
@@ -38,21 +40,7 @@ public class Oficina {
 		}
 		return gasto;
 	}
-	public double calcularGastoEnElSueldoDeVendedor() {
-		double gasto = 0.0;
-		for (int i = 0; i < lista.length; i++) {
-			if (lista[i] instanceof Vendedor) {
-				gasto += calcularSueldoDeUnEmpleado(lista[i]);
-			}
-		}
-		return gasto;
-	}
-	
-	public void imprimirTodo() {
-		for (int i = 0; i < lista.length; i++) {
-			System.out.println(lista[i]);
-		}
-	}
+
 	public Empleado findById(int buscNumEmpleado) {
 		int i=0;
 		boolean encontrado = false;
@@ -69,11 +57,14 @@ public class Oficina {
 		else
 			return null;
 	}
-	//pra comprobar si una clase esta intanciada de una forma o otra:
-	/*if(lista[i] instaneof Vendedor) {
+	public void imprimirFelicitaciones(int objVentas) {
+		Vendedor aux;
+		for (int i = 0; i < lista.length && lista[i] != null; i++) {
+			if (lista[i] instanceof Vendedor) {
+				aux = (Vendedor)lista[i];
+				aux.comprobarIncentivo(objVentas);
+			}
+		}
 	}
-	Para llamar un metodo de una clase hija que está instnaciado como la madre para rellenar un array se hace con el casteo:
-	(Vendedor)lista[i]."metodo"
-	*/
 	
 }
