@@ -1,25 +1,34 @@
 package ejercicio06;
 
-public class CuentaJoven extends Cliente{
-	private int ptsIngreso;
+public class CuentaJoven extends Cuenta{
+	private int extra;
 
-	public CuentaJoven(String nombre, double saldo, int edad, boolean activo, int ptsIngreso) {
-		super(nombre, saldo, edad, activo);
-		this.ptsIngreso = ptsIngreso;
+	public CuentaJoven(double saldo, String nombre, int numCuenta, int extra) {
+		super(saldo, nombre, numCuenta);
+		this.extra = extra;
 	}
-
-	public int getPtsIngreso() {
-		return ptsIngreso;
+	
+	public int getExtra() {
+		return extra;
 	}
-
-	public void setPtsIngreso(int ptsIngreso) {
-		this.ptsIngreso = ptsIngreso;
+	public void setExtra(int extra) {
+		this.extra = extra;
+	}
+	
+	@Override
+	public String toString() {
+		return "CuentaJoven [extra=" + extra + "]";
 	}
 
 	@Override
-	public String toString() {
-		return "CuentaJoven [ptsIngreso=" + ptsIngreso + "]";
+	public void ingresarSaldo(double cantIngreso) {
+		super.setSaldo(getSaldo() + cantIngreso);
 	}
-	
-	
+
+	@Override
+	public void retirarSaldo(double cantRetiro) {
+		// TODO Auto-generated method stub
+		
+	}
+		
 }

@@ -1,10 +1,10 @@
 package ejercicio06;
 
-public class CuentaEmpresa extends Cliente{
+public class CuentaEmpresa extends Cuenta{
 	private int comision;
 
-	public CuentaEmpresa(String nombre, double saldo, int edad, boolean activo, int comision) {
-		super(nombre, saldo, edad, activo);
+	public CuentaEmpresa(double saldo, String nombre, int numCuenta, int comision) {
+		super(saldo, nombre, numCuenta);
 		this.comision = comision;
 	}
 
@@ -19,6 +19,23 @@ public class CuentaEmpresa extends Cliente{
 	@Override
 	public String toString() {
 		return "CuentaEmpresa [comision=" + comision + "]";
+	}
+
+	@Override
+	public void ingresarSaldo(double cantIngreso) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void retirarSaldo(double cantRetiro) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	//
+	public void imprimirEmpresa() {
+		System.out.println("soy una empresa");
 	}
 	
 	
