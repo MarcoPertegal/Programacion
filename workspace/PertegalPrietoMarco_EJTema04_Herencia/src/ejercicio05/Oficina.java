@@ -33,7 +33,7 @@ public class Oficina {
 		}
 	}
 	
-	public double calcularGasto() {
+	public double calcularGastoT() {
 		double gasto = 0.0;
 		for (int i = 0; i < lista.length; i++) {
 			gasto += calcularSueldoDeUnEmpleado(lista[i]);

@@ -4,45 +4,49 @@ public class CuentaCorriente extends Cuenta{
 	private double mantenimiento;
 	private int puntos;
 
-	public CuentaCorriente(double saldo, String nombre, int numCuenta, double mantenimiento, int puntos) {
-		super(saldo, nombre, numCuenta);
+	public CuentaCorriente(double saldo, int numCuenta, Cliente c, double mantenimiento, int puntos) {
+		super(saldo, numCuenta, c);
 		this.mantenimiento = mantenimiento;
 		this.puntos = puntos;
 	}
-
+	
 	public double getMantenimiento() {
 		return mantenimiento;
 	}
-
 
 	public void setMantenimiento(double mantenimiento) {
 		this.mantenimiento = mantenimiento;
 	}
 
-
 	public int getPuntos() {
 		return puntos;
 	}
 
-
 	public void setPuntos(int puntos) {
 		this.puntos = puntos;
 	}
+	
 	@Override
 	public String toString() {
-		return "CuentaCorriente [mantenimiento=" + mantenimiento + ", puntos=" + puntos + "]";
+		return super.toString()+"CuentaCorriente [mantenimiento=" + mantenimiento + ", puntos=" + puntos + "]";
 	}
-
-	@Override
+	
+	//
 	public void ingresarSaldo(double cantIngreso) {
-		// TODO Auto-generated method stub
+		
+		super.setSaldo((getSaldo()+cantIngreso)-mantenimiento);
+		puntos++;
 		
 	}
 
-	@Override
 	public void retirarSaldo(double cantRetiro) {
-		// TODO Auto-generated method stub
-		
+		if (super.getSaldo() < cantRetiro) {
+			System.out.println("La cantidad que intenta extraer es mayor que el saldo de su cuenta.");
+		}
+		else {
+			super.setSaldo((getSaldo()-cantRetiro)-mantenimiento);
+			puntos++;
+		}
 	}
 	
 	

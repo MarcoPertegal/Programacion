@@ -17,7 +17,7 @@ public class Principal {
 		System.out.println("Diga el objetivo de ventas del vendedor:");
 		objVentas=Leer.datoInt();
 		o.imprimirFelicitaciones(objVentas);
-		System.out.printf("El gasto total es: %.2f \n",o.calcularGasto()); 
+		System.out.printf("El gasto total es: %.2f \n",o.calcularGastoT()); 
 		
 		System.out.println("Indique el número del empleado del que quiere saber el sueldo:");
 		buscNumEmpleado=Leer.datoInt();

@@ -3,8 +3,8 @@ package ejercicio06;
 public class CuentaEmpresa extends Cuenta{
 	private int comision;
 
-	public CuentaEmpresa(double saldo, String nombre, int numCuenta, int comision) {
-		super(saldo, nombre, numCuenta);
+	public CuentaEmpresa(double saldo, int numCuenta, Cliente c, int comision) {
+		super(saldo, numCuenta, c);
 		this.comision = comision;
 	}
 
@@ -18,25 +18,31 @@ public class CuentaEmpresa extends Cuenta{
 
 	@Override
 	public String toString() {
-		return "CuentaEmpresa [comision=" + comision + "]";
+		return super.toString()+"CuentaEmpresa [comision=" + comision + "]";
 	}
 
-	@Override
 	public void ingresarSaldo(double cantIngreso) {
-		// TODO Auto-generated method stub
-		
+		super.setSaldo(getSaldo() + cantIngreso);
 	}
 
-	@Override
 	public void retirarSaldo(double cantRetiro) {
-		// TODO Auto-generated method stub
-		
+		if (super.getSaldo() < cantRetiro) {
+			System.out.println("La cantidad que intenta extraer es mayor que el saldo de su cuenta.");
+		}else {
+			super.setSaldo((getSaldo()-cantRetiro)-comision);
+		}
 	}
 
-	//
 	public void imprimirEmpresa() {
 		System.out.println("soy una empresa");
 	}
 	
-	
+	public void comprobarDineroCuentaEmpresa() {
+		double cantidad= 100;
+		if (super.getSaldo() >= cantidad) {
+			System.out.println("Tienes más dinero de el que has puesto.");
+		}else {
+			System.out.println("Estas pelao.");
+		}
+	}
 }

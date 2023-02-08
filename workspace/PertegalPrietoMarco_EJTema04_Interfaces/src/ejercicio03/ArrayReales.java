@@ -3,7 +3,7 @@ package ejercicio03;
 import java.util.Arrays;
 import java.util.Random;
 
-public class ArrayReales implements Estadisticas{
+public class ArrayReales implements IEstadisticas{
 	private double [] num;
 
 	public ArrayReales(double[] num) {
@@ -38,9 +38,9 @@ public class ArrayReales implements Estadisticas{
 	}
 
 	public double calcularMinimo() {
-		double min = 10;
+		double min = num[0];
 		for (int i = 0; i < num.length; i++) {
-			if (min > num[i]) {
+			if (num[i]< min) {
 				min = num[i];
 			}
 		}

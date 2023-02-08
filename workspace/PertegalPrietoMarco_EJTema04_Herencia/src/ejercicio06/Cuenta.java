@@ -1,17 +1,17 @@
 package ejercicio06;
 
-public abstract class Cuenta {
+public abstract class Cuenta{
 	private double saldo;
-	private String nombre;
 	private int numCuenta;
+	Cliente c;
 	
 	//Para hacer la interfaz hacer algo relacionado con acciones, IInversiones con un metodo comprar acciones , y 
 	//ese metodo trendria que estar rrescrito en cuenta 
-	public Cuenta(double saldo, String nombre, int numCuenta) {
+	public Cuenta(double saldo, int numCuenta, Cliente c) {
 		super();
 		this.saldo = saldo;
-		this.nombre = nombre;
 		this.numCuenta = numCuenta;
+		this.c = c;
 	}
 	
 	public double getSaldo() {
@@ -22,14 +22,6 @@ public abstract class Cuenta {
 		this.saldo = saldo;
 	}
 
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
 	public int getNumCuenta() {
 		return numCuenta;
 	}
@@ -37,16 +29,22 @@ public abstract class Cuenta {
 	public void setNumCuenta(int numCuenta) {
 		this.numCuenta = numCuenta;
 	}
-	
+
+	public Cliente getC() {
+		return c;
+	}
+
+	public void setC(Cliente c) {
+		this.c = c;
+	}
+
 	@Override
 	public String toString() {
-		return "Cuenta [saldo=" + saldo + ", nombre=" + nombre + ", numCuenta=" + numCuenta + "]";
+		return "Cuenta [saldo=" + saldo + ", numCuenta=" + numCuenta + ", c=" + c + "]";
 	}
 
 	//
 	public abstract void ingresarSaldo(double cantIngreso);
-	
-	
 
 	public abstract void retirarSaldo(double cantRetiro);
 }
