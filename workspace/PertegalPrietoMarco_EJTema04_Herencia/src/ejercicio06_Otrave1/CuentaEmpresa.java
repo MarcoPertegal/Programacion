@@ -20,6 +20,7 @@ public class CuentaEmpresa extends Cuenta{
 	public String toString() {
 		return super.toString()+"CuentaEmpresa [comision=" + comision + "]";
 	}
+	//
 
 	@Override
 	public void ingresarSaldo(double cantIngreso) {
@@ -36,9 +37,16 @@ public class CuentaEmpresa extends Cuenta{
 		}
 	}
 
-	//
+	
 	public void imprimirEmpresa() {
 		System.out.println("soy una empresa");
+	}
+	public void comprobarDineroCuentaEmpresa(double cant) {
+		if (super.getSaldo() >= cant) {
+			System.out.println("Tienes más dinero de el que has puesto.");
+		}else {
+			System.out.println("Estas pelao.");
+		}
 	}
 	
 }

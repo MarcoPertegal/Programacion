@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="conditionHistory">
-		<item key="conditionHistoryEntry_0" value="suma%2 == 0"/>
-		<item key="conditionHistoryEntryCount" value="3"/>
-		<item key="conditionHistoryEntry_1" value="i == 50"/>
-		<item key="conditionHistoryEntry_2" value="i ==50"/>
+		<item key="conditionHistoryEntry_0" value="array1[i] == array2[i]"/>
+		<item key="conditionHistoryEntryCount" value="4"/>
+		<item key="conditionHistoryEntry_1" value="suma%2 == 0"/>
+		<item key="conditionHistoryEntry_2" value="i == 50"/>
+		<item key="conditionHistoryEntry_3" value="i ==50"/>
 	</section>
 	<section name="expressionHistory">
 	</section>

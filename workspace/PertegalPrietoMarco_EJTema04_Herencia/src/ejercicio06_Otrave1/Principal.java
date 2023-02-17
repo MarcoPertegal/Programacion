@@ -6,15 +6,14 @@ public class Principal {
 
 	public static void main(String[] args) {
 		int tope=0, buscNumCuenta, numAcciones;
-		double tope1, cantIngreso;
-		Cuenta [] lista = new Cuenta[4];
+		double tope1, cantIngreso, cant, cantRetiro;
+		Cuenta [] lista = new Cuenta[3];
 		Oficina o = new Oficina(lista);
 		
 		lista[0] = new CuentaJoven(2000, 001, new Cliente("Felipe", "1234a", 25), 1);
 		lista[1] = new CuentaEmpresa(1000, 002, new Cliente("Felipe", "1234a", 25), 1);
 		lista[2] = new CuentaCorriente(3000, 003, new Cliente("Felipe", "1234a", 25), 7, 0);
 		
-		//para llamar al metodo de la interfaz debe ir en un case
 		do {
 		System.out.println("¿Que desea hacer con sus cuentas?");
 		System.out.println(".................................");
@@ -24,8 +23,8 @@ public class Principal {
 		System.out.println("3.Extraer saldo de una de sus cuentas.");
 		System.out.println("4.Calcular saldo total de todas las cuentas.");
 		System.out.println("5.Consultar el sueldo de una cuenta.");
-		System.out.println("6.Gasto total de Cuenta de Empresa.");
-		System.out.println("7.Beneficio total Cuenta Joven.");
+		System.out.println("6.Gasto total de Cuenta de Empresa(comisión 1$ por sacar dinero).");
+		System.out.println("7.Beneficio total Cuenta Joven.(Regala 1$ por ingresar dinero)");
 		System.out.println("8.Comprar acciones de Andaluza de programación(100$).");
 		System.out.println("9.Imprimir mensaje si tu cuenta de empresa tiene mas de X cantidad.");
 		System.out.println("10.Buscar cuentas que tengan más de X cantidad");
@@ -48,15 +47,16 @@ public class Principal {
 				System.out.println("Selecciona el ID de la cuenta:");
 				buscNumCuenta=Leer.datoInt();
 				System.out.println("Diga el retiro");
-				o.retirarDineroDeUnaCuenta(o.findById(buscNumCuenta), buscNumCuenta);
+				cantRetiro=Leer.datoDouble();
+				o.retirarDineroDeUnaCuenta(o.findById(buscNumCuenta), cantRetiro);
 				break;
 			case 4:
-				System.out.printf("%.2f",o.calcularSaldoTotal());
+				System.out.printf("%.2f \n",o.calcularSaldoTotal());
 				break;
 			case 5:
 				System.out.println("Selecciona el ID de la cuenta que quiere ");
 				buscNumCuenta=Leer.datoInt();
-				o.consultarSaldoDeUnaCuenta(o.findById(buscNumCuenta));
+				System.out.println(o.consultarSaldoDeUnaCuenta(o.findById(buscNumCuenta))); 
 				break;
 			case 6:
 				System.out.println(o.getComisionesCuentaEmpresa());
@@ -72,8 +72,9 @@ public class Principal {
 				o.comprarAcciones(o.findById(buscNumCuenta), numAcciones);
 				break;
 			case 9:
-				
-				
+				System.out.println("Indique la cantidad:");
+				cant=Leer.datoDouble();
+				o.imprimirComprobarDineroCuentaEmpresa(cant);
 				break;
 			case 10:
 				System.out.println("Diga la cantidad:");

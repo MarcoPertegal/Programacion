@@ -34,13 +34,5 @@ public class CuentaJoven extends Cuenta{
 			super.setSaldo(getSaldo()-cantRetiro);
 		}
 	}
-	
-	public void comprobarDineroCuentaEmpresa() {
-		double cantidad= 100;
-		if (super.getSaldo() >= cantidad) {
-			System.out.println("Tienes más dinero de el que has puesto.");
-		}else {
-			System.out.println("Estas pelao.");
-		}
-	}
+
 }

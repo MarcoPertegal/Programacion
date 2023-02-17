@@ -61,17 +61,26 @@ public class Oficina implements IEstadisticas, IInversiones{
 		}
 	}
 	public void retirarDineroDeUnaCuenta(Cuenta c, double cantRetiro) {
-		c.retirarSaldo(cantRetiro);
-		if (c instanceof CuentaCorriente) {
-			comisionesCuentaEmpresa++;
+		if (c == null) {
+			System.out.println("No se ha encontrado la cuenta.");
+		}else {
+			c.retirarSaldo(cantRetiro);
+			if (c instanceof CuentaEmpresa) {
+				comisionesCuentaEmpresa++;
+			}
 		}
 	}
 	
 	public void ingresarDineroEnUnaCuenta(Cuenta c, double cantIngreso) {
-		c.ingresarSaldo(cantIngreso);
-		if (c instanceof CuentaJoven) {
-			gananciasCuentaJoven++;
+		if (c == null) {
+			System.out.println("No se ha encontrado la cuenta.");
+		}else {
+			c.ingresarSaldo(cantIngreso);
+			if (c instanceof CuentaJoven) {
+				gananciasCuentaJoven++;
+			}
 		}
+		
 	}
 	
 	public Cuenta findById(int buscNumCuenta) {
@@ -95,7 +104,7 @@ public class Oficina implements IEstadisticas, IInversiones{
 
 	public double calcularSaldoTotal() {
 		double total=0.0;
-		for (int i = 0; i < lista.length; i++) {
+		for (int i = 0; i < lista.length && lista[i] !=null; i++) {
 			total += lista[i].getSaldo();
 		}
 		return total;
@@ -106,15 +115,19 @@ public class Oficina implements IEstadisticas, IInversiones{
 	
 	public void comprarAcciones(Cuenta c, int numAcciones) {
 		double preAcciones=100;
-		c.setSaldo(c.getSaldo()-(numAcciones*preAcciones));
-		System.out.println("Compra realizada con exito.");
+		if ((numAcciones*preAcciones)> c.getSaldo()) {
+			System.out.println("No tienes el suficiente dinero en tu cuenta.");
+		}else {
+			c.setSaldo(c.getSaldo()-(numAcciones*preAcciones));
+			System.out.println("Compra realizada con exito.");
+		}
+		
 	}
 	
-	public void imprimirComprobarDineroCuentaEmpresa(double cantidad) {
-		
+	public void imprimirComprobarDineroCuentaEmpresa(double cant) {
 		for (int i = 0; i < lista.length; i++) {
 			if (lista[i] instanceof CuentaEmpresa) {
-				
+				((CuentaEmpresa)lista[i]).comprobarDineroCuentaEmpresa(cant);
 			}
 		}
 		
@@ -129,6 +142,5 @@ public class Oficina implements IEstadisticas, IInversiones{
 		}
 		return aux;//devuelve el array auxiliar entero
 	}
-	
 
 }

@@ -1,6 +1,6 @@
 package ejercicio06_Otrave1;
 
-public abstract class Cuenta {
+public abstract class Cuenta{
 	private double saldo;
 	private int numCuenta;
 	private Cliente c;

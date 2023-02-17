@@ -4,6 +4,8 @@
 	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-17"/>
 	<item key="org.eclipse.jdt.ui.last.external.project" value="C:\Users\Admin\Desktop\repositorios(esto no es un repositiorio)\Hola-Mundo"/>
 	<section name="completion_proposal_size">
+		<item key="contextSelector.size.x" value="337"/>
+		<item key="contextSelector.size.y" value="277"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
@@ -56,9 +58,9 @@
 	<section name="DialogBounds_GenerateToStringDialog">
 		<item key="DIALOG_X_ORIGIN" value="985"/>
 		<item key="DIALOG_Y_ORIGIN" value="68"/>
-		<item key="DIALOG_WIDTH" value="759"/>
-		<item key="DIALOG_HEIGHT" value="916"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|8.861539|0|WINDOWS|1|-16|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="678"/>
+		<item key="DIALOG_HEIGHT" value="877"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="SourceActionDialog.constructors">
 		<item key="VisibilityModifier" value="1"/>
@@ -72,9 +74,9 @@
 	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
 		<item key="DIALOG_X_ORIGIN" value="630"/>
 		<item key="DIALOG_Y_ORIGIN" value="9"/>
-		<item key="DIALOG_WIDTH" value="759"/>
-		<item key="DIALOG_HEIGHT" value="909"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|8.861539|0|WINDOWS|1|-16|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="678"/>
+		<item key="DIALOG_HEIGHT" value="869"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item key="SortOrdering" value="false"/>
@@ -83,9 +85,9 @@
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
 		<item key="DIALOG_X_ORIGIN" value="630"/>
 		<item key="DIALOG_Y_ORIGIN" value="9"/>
-		<item key="DIALOG_WIDTH" value="759"/>
-		<item key="DIALOG_HEIGHT" value="929"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|8.861539|0|WINDOWS|1|-16|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="678"/>
+		<item key="DIALOG_HEIGHT" value="889"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="AddUnimplementedConstructorsDialog">
 		<item key="OmitCallToSuper" value="false"/>
@@ -120,5 +122,12 @@
 		<item key="DIALOG_WIDTH" value="689"/>
 		<item key="DIALOG_HEIGHT" value="689"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|8.861539|0|WINDOWS|1|-16|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="RenameInformationPopup">
+	</section>
+	<section name="JavaSearchPage">
+		<item key="CASE_SENSITIVE" value="false"/>
+		<item key="INCLUDE_MASK" value="11"/>
+		<item key="HISTORY_SIZE" value="0"/>
 	</section>
 </section>
