@@ -14,13 +14,12 @@ public class Principal {
 		
 		List <Socio> listaSocios = new ArrayList <Socio>();
 		
-		CrudSocio crudS = new CrudSocio (listaSocios);//Esto se hace para yo poder llmar a los metodos de dentro de crudSocio
+		CrudSocio crudS = new CrudSocio(listaSocios);//no termino de entender bien si esto está bien, y si está bien porque se hace así pasando dos veces lo mismo pq sino da error
+		GestionClub gestionS = new GestionClub (new CrudSocio (listaSocios),"Padel", 2000);
 		
-		listaSocios.add(new Socio("Antonio", "Pérez Moreno", 24, 245));//cambiar add por el metodo agregar o se puede dejar asi???
-		listaSocios.add(new Socio("Felipe", "Gómez Gracía", 32, 246));
-		listaSocios.add(new Socio("Juan", "Ballén Reyes", 51, 247));
-		
-		
+		listaSocios.add(new Socio("Antonio", "Pérez Moreno", 1, 245));//cambiar add por el metodo agregar o se puede dejar asi???
+		listaSocios.add(new Socio("Felipe", "Gómez Gracía", 1, 246));
+		listaSocios.add(new Socio("Juan", "Ballén Reyes", 1, 247));
 		
 		System.out.println("Bienvenido al Club de Campo");
 		System.out.println("///////////////////////////");
@@ -62,7 +61,7 @@ public class Principal {
 				case 2:
 					System.out.println("Introduzca el número del socio:");
 					buscNumSocio=Leer.datoInt();
-					System.out.println(crudS.findByNum(buscNumSocio));
+					crudS.mostrarUnSocio(crudS.findByNum(buscNumSocio));
 					break;
 				case 3:
 					System.out.println(listaSocios);
@@ -80,7 +79,7 @@ public class Principal {
 					crudS.eliminar(crudS.findByNum(buscNumSocio));
 					break;
 				case 6:
-					//como llamo al metodo de gestion club?
+					System.out.println(gestionS.totalEdad()); 
 					break;
 				case 7:
 					System.out.println("Diga el número del socio del que quiere motrar su nombre");
@@ -91,12 +90,8 @@ public class Principal {
 					System.out.println("OPCIÓN DESCONOCIDA");
 					break;
 			}
-			
 		} while (tope != 0);
 		System.out.println("GRAcias");
-		
-		
-
 	}
 
 }

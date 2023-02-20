@@ -46,7 +46,7 @@ public class GestionClub {
 	}
 	
 	public double totalEdad() {
-		Iterator <Socio> it = crudS.getListaSocios().iterator();
+		Iterator <Socio> it = crudS.getListaSocios().iterator(); //preguntar esta linea
 		double totalEdad = 0;
 		while (it.hasNext()) {
 			totalEdad += it.next().getEdad();

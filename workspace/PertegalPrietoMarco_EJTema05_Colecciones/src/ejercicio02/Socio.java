@@ -52,6 +52,13 @@ public class Socio {
 				+ "]";
 	}
 	
+	public void mostrarUnSocio(Socio s) {
+		System.out.println("- Número de socio: "+getNumSocio());
+		System.out.println("- Nombre: "+getNombre());
+		System.out.println("- Apellidos: "+getApellidos());
+		System.out.println("- Edad: "+getEdad());
+	}
+	
 	
 	
 }

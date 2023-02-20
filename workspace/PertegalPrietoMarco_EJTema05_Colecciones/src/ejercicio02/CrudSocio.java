@@ -29,15 +29,20 @@ public class CrudSocio {
 	}
 	
 	public void eliminar(Socio s) {
-		listaSocios.remove(s);
+		if (s !=null) 
+			listaSocios.remove(s);
+		else if (listaSocios.isEmpty())
+			imprimirListaIsEmpty();
+		else
+			imprimirMensajeDeError();
 	}
 	
 	public Socio findByNum(int numSocio) {
 		int i = 0;
 		boolean verdadero = false;
 		while (!verdadero && i < listaSocios.size()) {
-			if (numSocio == listaSocios.get(i).getNumSocio()) {//ahora no colocamos el .get en vez de [i] porque es una arrray list y es como si fuera una interfaz fuera de la clase
-				verdadero = true;
+			if (numSocio == listaSocios.get(i).getNumSocio()) {//ahora no colocamos el .get en vez de [i] porque es una arrray list 
+				verdadero = true;								//y es como si fuera una interfaz fuera de la clase
 			}else {
 				i++;
 			}
@@ -49,8 +54,22 @@ public class CrudSocio {
 	}
 	
 	public void editar(Socio s, int nuevaEdad) {//editar la edad
-		s.setEdad(nuevaEdad);
+		if (s !=null) 
+			s.setEdad(nuevaEdad);
+		else
+			imprimirMensajeDeError();
 	}
+	
+	public void imprimirMensajeDeError() {
+		System.out.println("No se ha encontrado el número de socio.");
+	}
+	public void imprimirListaIsEmpty() {
+		System.out.println("La lista está vacía.");
+	}
+	public void mostrarUnSocio(Socio s) {
+		s.mostrarUnSocio(s);
+	}
+	
 	
 	
 }

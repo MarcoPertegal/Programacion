@@ -13,9 +13,9 @@ public class Principal {
 		
 		Set <Alumno> listaAlumnos = new HashSet <Alumno>();
 		
-		listaAlumnos.add(new Alumno(5.6, "Juan", "DAM", 19));
-		listaAlumnos.add(new Alumno(7.6, "Felipe", "AYF",21));
-		listaAlumnos.add(new Alumno(4.2, "Juani", "TELECO",23));
+		listaAlumnos.add(new Alumno(5.6, "Juan", "DAM", 19, 001));
+		listaAlumnos.add(new Alumno(7.6, "Felipe", "AYF",21, 002));
+		listaAlumnos.add(new Alumno(4.2, "Juani", "TELECO",23, 003));
 		
 		System.out.println("Bienvenido al programa para gestionar alumnos");
 		System.out.println("////////////////////////////////////////////");
@@ -28,6 +28,9 @@ public class Principal {
 			System.out.println("1. Mostrar un alumno.");
 			System.out.println("2. Modificar un alumno.");
 			System.out.println("3. Borrar un alumno.");
+			System.out.println("4. Nota media.");
+			System.out.println("5. Número total de suspensos.");
+			System.out.println("6. Media de suspensos");
 			System.out.println("-----------------------------");
 			System.out.println("");
 			tope=Leer.datoInt();
@@ -36,7 +39,7 @@ public class Principal {
 				System.out.println("Saliendo");
 				break;
 			case 1:
-				//los metodos de motrar un alumno como se hacen si esta lista no guarda en orden?
+				
 				break;
 			default:
 				System.out.println("OPCIÓN DESCONOCIDA");

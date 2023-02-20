@@ -5,13 +5,15 @@ public class Alumno {
 	private String nombre;
 	private String modalidad;
 	private int edad;
+	private int id;
 	
-	public Alumno(double nota, String nombre, String modalidad, int edad) {
+	public Alumno(double nota, String nombre, String modalidad, int edad, int id) {
 		super();
 		this.nota = nota;
 		this.nombre = nombre;
 		this.modalidad = modalidad;
 		this.edad = edad;
+		this.id = id;
 	}
 
 	public double getNota() {
@@ -46,10 +48,28 @@ public class Alumno {
 		this.edad = edad;
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	@Override
 	public String toString() {
-		return "Alumno [nota=" + nota + ", nombre=" + nombre + ", modalidad=" + modalidad + ", edad=" + edad + "]";
+		return "Alumno [nota=" + nota + ", nombre=" + nombre + ", modalidad=" + modalidad + ", edad=" + edad + ", id="
+				+ id + "]";
 	}
+	
+	public void mostrarUnAlumno() {
+		System.out.println("- Id: "+getId());
+		System.out.println("- Nombre: "+getNombre());
+		System.out.println("- Modalidad: "+getModalidad());
+		System.out.println("- Edad: "+getEdad());
+		System.out.println("- Nota: "+getNota());
+	}
+	
 	
 	
 }
