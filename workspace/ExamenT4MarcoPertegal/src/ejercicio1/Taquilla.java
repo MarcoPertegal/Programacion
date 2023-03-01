@@ -70,7 +70,7 @@ public class Taquilla {
 	public double calcularTotal(double porcentDonativo) {
 		double total = 0;
 		for (int i = 0; i < lista.length; i++) {
-			total += lista[i].calcularPrecio()+ lista[i].calcularDonativo(porcentDonativo);
+			total += lista[i].calcularPrecio()+ lista[i].calcularDonativo(porcentDonativo);//aqui abria que haber llamado el metodo de arriba de calcular el orecio de una entrada
 		}
 		return total;
 	}

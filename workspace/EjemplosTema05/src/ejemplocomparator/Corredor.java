@@ -1,5 +1,7 @@
 package ejemplocomparator;
 
+import java.util.Objects;
+
 public class Corredor implements Comparable <Corredor>{//implementamos una interfaz qeu se llama comparable, hay que decirle el tipo de cosas que queremos ordenar
 
 	
@@ -41,7 +43,6 @@ public class Corredor implements Comparable <Corredor>{//implementamos una inter
 	
 	@Override
 	public int compareTo(Corredor c) {
-		
 		if(this.dorsal < c.dorsal) {
 			return -1;
 
@@ -55,6 +56,27 @@ public class Corredor implements Comparable <Corredor>{//implementamos una inter
 		
 	}
 	//devuelve 0 si son iguales -1 si el del parametro es mayor y 1 si al que llama es mayor del que le pasamos, pero eso pq en este caso son int
+
+	//cada vez que usemos una lista de tipo hash autogeneramos esto, junto a los getter setters y to eso
+	@Override
+	public int hashCode() {
+		return Objects.hash(dorsal, marca, nombre);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Corredor other = (Corredor) obj;
+		return dorsal == other.dorsal && Double.doubleToLongBits(marca) == Double.doubleToLongBits(other.marca)
+				&& Objects.equals(nombre, other.nombre);
+	}
+	
+	
 	
 
 	

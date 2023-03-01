@@ -1,21 +1,23 @@
 package ejercicio03;
 
+import java.util.Objects;
+
 public class Alumno {
 	private double nota;
 	private String nombre;
-	private String modalidad;
+	private String apellidos;
 	private int edad;
-	private int id;
+	private String dni;
 	
-	public Alumno(double nota, String nombre, String modalidad, int edad, int id) {
+	public Alumno(double nota, String nombre, String apellidos, int edad, String dni) {
 		super();
 		this.nota = nota;
 		this.nombre = nombre;
-		this.modalidad = modalidad;
+		this.apellidos = apellidos;
 		this.edad = edad;
-		this.id = id;
+		this.dni = dni;
 	}
-
+	
 	public double getNota() {
 		return nota;
 	}
@@ -32,12 +34,12 @@ public class Alumno {
 		this.nombre = nombre;
 	}
 
-	public String getModalidad() {
-		return modalidad;
+	public String getApellidos() {
+		return apellidos;
 	}
 
-	public void setModalidad(String modalidad) {
-		this.modalidad = modalidad;
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
 	}
 
 	public int getEdad() {
@@ -48,27 +50,41 @@ public class Alumno {
 		this.edad = edad;
 	}
 
-	public int getId() {
-		return id;
+	public String getDni() {
+		return dni;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setDni(String dni) {
+		this.dni = dni;
+	}
+	
+	@Override
+	public String toString() {
+		return "Alumno [nota=" + nota + ", nombre=" + nombre + ", apellidos=" + apellidos + ", edad=" + edad + ", dni="
+				+ dni + "]";
+	}
+	
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(apellidos, dni, edad, nombre, nota);
 	}
 
 	@Override
-	public String toString() {
-		return "Alumno [nota=" + nota + ", nombre=" + nombre + ", modalidad=" + modalidad + ", edad=" + edad + ", id="
-				+ id + "]";
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Alumno other = (Alumno) obj;
+		return Objects.equals(apellidos, other.apellidos) && Objects.equals(dni, other.dni) && edad == other.edad
+				&& Objects.equals(nombre, other.nombre)
+				&& Double.doubleToLongBits(nota) == Double.doubleToLongBits(other.nota);
 	}
+
 	
-	public void mostrarUnAlumno() {
-		System.out.println("- Id: "+getId());
-		System.out.println("- Nombre: "+getNombre());
-		System.out.println("- Modalidad: "+getModalidad());
-		System.out.println("- Edad: "+getEdad());
-		System.out.println("- Nota: "+getNota());
-	}
 	
 	
 	

@@ -41,6 +41,7 @@ public class Ppal {
 			System.out.println("1.Ordenar por nombre");
 			System.out.println("2.Ordenar por dorsal");
 			System.out.println("3.Ordenar por marca y ganadores");
+			System.out.println("4.Mostrar todo.(para comprobar si se quedan guardados en el orden)");
 			opcionUser = Leer.datoInt();
 
 			switch (opcionUser) {
@@ -104,6 +105,12 @@ public class Ppal {
 							System.out.println("BRONCE --> " + con);
 						}
 						pos++;
+					}
+					break;
+				
+				case 4:
+					for (Corredor con : corredores) {
+						System.out.println(con);
 					}
 					break;
 	

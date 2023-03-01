@@ -15,7 +15,7 @@ public class Principal {
 		List <Socio> listaSocios = new ArrayList <Socio>();
 		
 		CrudSocio crudS = new CrudSocio(listaSocios);//no termino de entender bien si esto está bien, y si está bien porque se hace así pasando dos veces lo mismo pq sino da error
-		GestionClub gestionS = new GestionClub (new CrudSocio (listaSocios),"Padel", 2000);
+		GestionClub gestionS = new GestionClub (crudS,"Padel", 2000);//en vez de pasarle la instancia de new crudSocio otravesz le paso la referencia de la clase
 		
 		listaSocios.add(new Socio("Antonio", "Pérez Moreno", 1, 245));//cambiar add por el metodo agregar o se puede dejar asi???
 		listaSocios.add(new Socio("Felipe", "Gómez Gracía", 1, 246));
