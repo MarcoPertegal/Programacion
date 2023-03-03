@@ -1,17 +1,16 @@
 package ejercicio06;
 
-public class Trabajador {
+public class Trabajador implements Comparable <Trabajador>{
 	private String nombre;
 	private String dni;
 	private double horas;
 	private double sueldo;
 	
-	public Trabajador(String nombre, String dni, double horas, double sueldo) {
+	public Trabajador(String nombre, String dni, double horas) {
 		super();
 		this.nombre = nombre;
 		this.dni = dni;
 		this.horas = horas;
-		this.sueldo = sueldo;
 	}
 
 	public String getNombre() {
@@ -51,6 +50,27 @@ public class Trabajador {
 		return "Trabajador [nombre=" + nombre + ", dni=" + dni + ", horas=" + horas + ", sueldo=" + sueldo + "]";
 	}
 	//
+
+	@Override
+	public int compareTo(Trabajador t) {
+		//hacerlo en casa, se ordena por horas trabajdas 
+		//esta en los otros ejercicios
+		double horas1 = this.getHoras();
+		double horas2 = t.getHoras();
+		if (horas1 > horas2) {
+			return 1;
+		}else {
+			if (horas1 < horas2) {
+				return -1;
+			}
+		}
+		return 0;
+	}
+	
+	public double calcularSalario(double pagoHora) {
+		return pagoHora*horas;
+	}
+	//esto luque lo hizo con una interfaz para calcular el sueldo, como lo hizo?
 	
 	
 }

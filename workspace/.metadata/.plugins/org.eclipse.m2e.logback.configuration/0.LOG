@@ -231,3 +231,47 @@
 2023-02-23 10:01:46,293 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2023-02-23 12:37:34,349 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2023-02-24 09:57:00,305 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-01 10:07:52,274 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-01 14:22:19,282 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-02 10:37:01,469 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-02 12:34:12,825 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-02 18:18:46,698 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-02 20:58:56,126 [Worker-40: Computing Git status for repository Programacion] ERROR o.e.j.i.storage.file.PackDirectory - Exception caught while accessing pack file D:\.TRABAJOS 1º DAM\Programacion\.git\objects\pack\pack-2bec448136ff73405528af7f50753e786a3afbaa.pack, the pack file might be corrupt. Caught 4 consecutive errors while trying to read this pack.
+java.io.IOException: El volumen para un archivo ha sido alterado externamente, por lo que el archivo abierto ya no es válido
+	at java.base/java.io.RandomAccessFile.readBytes(Native Method) ~[na:na]
+	at java.base/java.io.RandomAccessFile.read(RandomAccessFile.java:405) ~[na:na]
+	at java.base/java.io.RandomAccessFile.readFully(RandomAccessFile.java:469) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.Pack.read(Pack.java:713) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.WindowCache.load(WindowCache.java:515) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.WindowCache.getOrLoad(WindowCache.java:602) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.WindowCache.get(WindowCache.java:385) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.pin(WindowCursor.java:327) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.copy(WindowCursor.java:226) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.Pack.readFully(Pack.java:602) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.Pack.load(Pack.java:785) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.Pack.get(Pack.java:273) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.PackDirectory.open(PackDirectory.java:212) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openPackedObject(ObjectDirectory.java:405) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openPackedFromSelfOrAlternate(ObjectDirectory.java:369) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openObjectWithoutRestoring(ObjectDirectory.java:360) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openObject(ObjectDirectory.java:345) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:132) ~[na:na]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.hasCrLfInIndex(WorkingTreeIterator.java:1540) ~[na:na]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEolStreamType(WorkingTreeIterator.java:1475) ~[na:na]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.possiblyFilteredInputStream(WorkingTreeIterator.java:406) ~[na:na]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.idBufferBlob(WorkingTreeIterator.java:390) ~[na:na]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.idBuffer(WorkingTreeIterator.java:311) ~[na:na]
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.getEntryObjectId(AbstractTreeIterator.java:408) ~[na:na]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.contentCheck(WorkingTreeIterator.java:1051) ~[na:na]
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isModified(WorkingTreeIterator.java:954) ~[na:na]
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:205) ~[na:na]
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:195) ~[na:na]
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:157) ~[na:na]
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:918) ~[na:na]
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:477) ~[na:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.lambda$8(IndexDiffCacheEntry.java:634) ~[na:na]
+	at org.eclipse.egit.core.UnitOfWork.run(UnitOfWork.java:115) ~[na:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:627) ~[na:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$2.reload(IndexDiffCacheEntry.java:398) ~[na:na]
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$IndexDiffReloadJob.run(IndexDiffCacheEntry.java:775) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.100.v20220817-1539.jar:na]

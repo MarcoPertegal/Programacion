@@ -26,9 +26,9 @@ public class Alimentacion extends Producto {
 	public boolean comprobarDescuento() {
 		boolean descuento = false;
 		if (diasCad < 2) {
-			descuento = true;
 			return descuento;
 		}else {
+			descuento = true;
 			return descuento;
 		}
 	}
@@ -44,7 +44,7 @@ public class Alimentacion extends Producto {
 		if (comprobarDescuento()) {
 			return super.getPrecioUni()-(super.getPrecioUni()*descuento)/100;
 		}else {
-			return 0;
+			return getPrecioUni();
 		}
 	}
 	

@@ -32,17 +32,30 @@ public class Venta {
 	//otro para imprimir el tique entero
 	
 	public void imprimirTiquet() {
+		System.out.println("CANT \t Producto \t Precio \t Total");
+		System.out.println("-------------------------------------------------");
 		for (int i = 0; i < lista.length; i++) {
+			lista[i].imprimirLinea();
 			if(lista[i].getP() instanceof Alimentacion) {//instance of sirbe para cambiarle la sinstancia a la clase y poder usar el metodo imprimir emnsaje 
-				System.out.println(((Alimentacion)lista[i].getP()).comprobarDescuento());
+				((Alimentacion)lista[i].getP()).imprimirMensaje();
 			}
 		}
+		System.out.println("--------------------------------------------------");
+		System.out.printf("TOTAL: %.2f", calcularTotal());
 	}
 	public void imprimirTiquetMal() {
 		for (int i = 0; i < lista.length; i++) {
 			lista[i].imprimirLinea();
 		}
 		
+	}
+	public double calcularTotal() {
+		double total=0.0;
+		for (int i = 0; i < lista.length; i++) {
+			total += lista[i].calcularSubTotal();
+
+		}
+		return total;
 	}
 	
 	

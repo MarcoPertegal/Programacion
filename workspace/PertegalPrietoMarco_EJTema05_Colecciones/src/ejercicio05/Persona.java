@@ -50,13 +50,23 @@ public class Persona implements Comparable <Persona>{
 	public String toString() {
 		return "Persona [nombre=" + nombre + ", dni=" + dni + ", edad=" + edad + ", altura=" + altura + "]";
 	}
-
+	
 	@Override
 	public int compareTo(Persona p) { //como al metodo compareTo solo se le puede pasar un parametro usando el this. 
 		return (this.nombre.toLowerCase().compareTo(p.getNombre().toLowerCase()));
 	}
-
-	
+	//PARA COMPARAR por int por oden natural
+	/*
+	public int compareTo(Persona p) {
+		if (this.edad > p.getEdad()) {
+			return -1;
+		}else {
+			if(this.edad < p.getEdad()){
+				return 1;
+			}
+			return 0;
+		}
+	}*/
 	
 	
 	

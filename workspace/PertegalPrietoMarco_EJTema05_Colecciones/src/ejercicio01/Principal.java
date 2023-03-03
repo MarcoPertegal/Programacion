@@ -11,9 +11,8 @@ public class Principal {
 
 	public static void main(String[] args) {
 		//¿como paso un ArrayList a un metodo de la clase nota?
-		//¿Porque me peta cuando el array esta vacio?
 		//Para imprimir con el numero de nota lo hago con un for
-		int tope, busc;
+		int tope, busc, num=1;
 		String titulo, contenido, fecha;
 		
 		List <Nota> listaNotas = new ArrayList <Nota>();
@@ -35,6 +34,7 @@ public class Principal {
 			System.out.println("2. Total de notas.");
 			System.out.println("3. Agregar una nueva nota.");
 			System.out.println("4. Eliminar una nota(Comprobando).");
+			System.out.println("5.Mostrar todas las notas");
 			System.out.println("---------------------------");
 			System.out.println("");
 			
@@ -44,9 +44,6 @@ public class Principal {
 				System.out.println("Saliendo de la aplicación.");
 			break;
 			case 1:
-				/*for (int i = 0; i < listaNotas.size(); i++) {//en vez del .lenght porque la lista es dimánica
-					System.out.println((i+1)+listaNotas.toArray());//como imprimo la lista de notas con el numero delante?
-				}*/
 				System.out.println("");
 				System.out.println("Indique la posición de la nota que quiere mostrar:");
 				busc=Leer.datoInt();
@@ -83,6 +80,12 @@ public class Principal {
 					System.out.println("lista vacía");
 				}
 			break;
+			case 5:
+				for (Nota n : listaNotas) {
+					System.out.println(num+""+n);
+					num++;
+				}
+				break;
 			default:
 				System.out.println("OPCIÓN DESCONOCIDA");
 				break;

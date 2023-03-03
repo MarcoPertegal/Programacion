@@ -35,13 +35,11 @@ public class LineaDeVenta {
 	public String toString() {
 		return "LineaDeVenta [p=" + p + ", cant=" + cant + "]";
 	}
-	//metodo calcular precio total de uno solo
-	//metodo para imprimir solo una linea del tiquet, con los get
 	public double calcularSubTotal() {
 		return p.calcularPrecioUni()*cant;
 	}
 	public void imprimirLinea() {
-		System.out.printf("%d \t %s \t %.2f \t %.2f",cant,p.getNombre(), p.getPrecioUni(), calcularSubTotal());
+		System.out.printf("%d \t %s \t %.2f \t\t %.2f \n",cant,p.getNombre(), p.getPrecioUni(), calcularSubTotal());
 	}
 	
 	

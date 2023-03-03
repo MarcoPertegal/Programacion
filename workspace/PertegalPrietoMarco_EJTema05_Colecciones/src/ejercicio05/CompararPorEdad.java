@@ -18,6 +18,11 @@ public class CompararPorEdad implements Comparator <Persona>{
 			return 0;
 		}
 	}
+
+	
+	
+	
+	
 	
 	
 

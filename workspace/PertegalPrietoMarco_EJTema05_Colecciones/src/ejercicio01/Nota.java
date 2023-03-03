@@ -41,9 +41,5 @@ public class Nota {
 		return "- Nota [titulo=" + titulo + ", contenido=" + contenido + ", fechaDeCreacion=" + fechaDeCreacion + "] \n";
 	}
 	
-	///
-	public void prueba() {
-		
-	}
 	
 }

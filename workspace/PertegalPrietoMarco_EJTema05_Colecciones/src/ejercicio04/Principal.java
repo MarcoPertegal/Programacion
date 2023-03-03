@@ -63,7 +63,6 @@ public class Principal {
 				a.editarNombre(a.buscarId(buscId),nuevoNombre);
 				break;
 			case 6:
-				System.out.println("Ordenar por nombre:");
 				listaTree = new TreeMap<Contacto, Integer>();
 				listaTree.putAll(lista);
 				//al poner el metodo mostrar de la clase contacto no se ordena pq no esta tirando del tree map en el for de abajo si

@@ -6,7 +6,6 @@ public class CompararPorAltura implements Comparator <Persona>{
 
 	@Override
 	public int compare(Persona p1, Persona p2) {
-		
 		double altura1 = p1.getAltura();
 		double altura2 = p2.getAltura();
 		
