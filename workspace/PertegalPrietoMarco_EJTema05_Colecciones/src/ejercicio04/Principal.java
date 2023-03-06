@@ -48,7 +48,7 @@ public class Principal {
 			case 3:
 				System.out.println("Id por el que desea buscar:");
 				buscId=Leer.datoInt();
-				System.out.println(a.buscarId(buscId));
+				System.out.println(a.buscarIdV2(buscId));
 				break;
 			case 4:
 				System.out.println("Id del que desea borrar");

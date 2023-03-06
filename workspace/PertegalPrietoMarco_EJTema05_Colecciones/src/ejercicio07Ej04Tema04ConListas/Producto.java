@@ -2,7 +2,7 @@ package ejercicio07Ej04Tema04ConListas;
 
 import java.util.Objects;
 
-public abstract class Producto implements Comparable <LineaVenta>{
+public class Producto{
 	//tiene como hijas alimentacion y ropa
 	//en producto va el orden natural precio menor mayor
 	//no natrual ordenar por nombre
@@ -65,16 +65,11 @@ public abstract class Producto implements Comparable <LineaVenta>{
 	}
 	
 	///////////////
-	public abstract double calcularPrecioUni();
-	
-	public double compareTo(Producto p) {
-		if(this.precioUni > p.getPrecioUni()) {
-			return -1;
-		}else {
-			if(this.precioUni < p.getPrecioUni()) {
-				return 1;
-			}
-			return 0;
-		}
+	public double calcularPrecioUni() {
+		return 0;
 	}
+	//ENtonces no podemos ordenar por natural porque hay que monta un lio
+
+
 }
+

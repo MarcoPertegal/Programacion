@@ -25,12 +25,12 @@ public class Principal {
 			System.out.println("");
 			System.out.println("¿Qué desea hacer?");
 			System.out.println("----------------------");
-			System.out.println("0. 	Salir");
-			System.out.println("1. 	Motrar todo.");
-			System.out.println("2.	Ordenar por horas ASC.");
-			System.out.println("3. 	Ordenar por horas DESC.");
-			System.out.println("4. 	Ordenar por sueldo.");
-			System.out.println("5.	Calcular sueldo.");
+			System.out.println("0.Salir");
+			System.out.println("1.Motrar todo.");
+			System.out.println("2.Ordenar por horas ASC.");
+			System.out.println("3.Ordenar por horas DESC.");
+			System.out.println("4.Ordenar por sueldo.");
+			System.out.println("5.Calcular sueldo.");
 			System.out.println("-----------------------");
 			System.out.println("");
 			tope=Leer.datoInt();
@@ -48,13 +48,17 @@ public class Principal {
 				Collections.sort(listaTrab);
 				break;
 			case 3:
-				Collections.sort(listaTrab, new compararHorasMayorMenor());
+				Collections.sort(listaTrab, new CompararHorasMayorMenor());
 				break;
-				
+			case 4:
+				Collections.sort(listaTrab, new CompararPorSueldo());
+				break;
 			case 5:
-				System.out.println("Indique a cuanto cobra la hora:");
-				pagoHora
-				hacerlo en un for para que el metodo me calcule de uno en uno y lo setee
+				System.out.println("Indique a cuanto se cobra la hora:");
+				pagoHora=Leer.datoDouble();
+				for (Trabajador t : listaTrab) {
+					t.calcularSalario(pagoHora);
+				}
 				break;
 			default:
 				System.out.println("Número deconocido");

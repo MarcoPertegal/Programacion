@@ -53,8 +53,6 @@ public class Trabajador implements Comparable <Trabajador>{
 
 	@Override
 	public int compareTo(Trabajador t) {
-		//hacerlo en casa, se ordena por horas trabajdas 
-		//esta en los otros ejercicios
 		double horas1 = this.getHoras();
 		double horas2 = t.getHoras();
 		if (horas1 > horas2) {
@@ -67,10 +65,9 @@ public class Trabajador implements Comparable <Trabajador>{
 		return 0;
 	}
 	
-	public double calcularSalario(double pagoHora) {
-		return pagoHora*horas;
+	public void calcularSalario(double pagoHora) {
+		sueldo = horas*pagoHora;
 	}
-	//esto luque lo hizo con una interfaz para calcular el sueldo, como lo hizo?
 	
 	
 }

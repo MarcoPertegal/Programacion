@@ -89,10 +89,12 @@ public class Oficina implements IInversiones{
 			return null;
 	}
 	public void ingresarDineroEnUnaCuenta(Cuenta c, double cantIngreso) {
-		c.ingresarSaldo(cantIngreso);
-		if (c instanceof CuentaJoven) {
-			beneficioCuentaJoven++;
+		if (c != null) {
+			c.ingresarSaldo(cantIngreso);
+			if (c instanceof CuentaJoven) 
+				beneficioCuentaJoven++;
 		}
+		
 	}
 	public void retirarDineroDeUnaCuenta(Cuenta c, double cantRetiro) {
 		c.retirarSaldo(cantRetiro);
@@ -105,6 +107,16 @@ public class Oficina implements IInversiones{
 		double preAccion = 100;
 		c.setSaldo(c.getSaldo()-(cantAcciones*preAccion));
 		
+	}
+	public void mostrarTodo() {
+
+		for (Cuenta c : lista) {
+			System.out.println("--------------------------------");
+			System.out.printf("Saldo: %.2f", c.getSaldo());
+			System.out.printf("Número Cuenta: %.d", c.getNumCuenta());
+			System.out.printf("Edad: %.s", c.getC().getEdad());
+			System.out.printf("Dni: %.s", c.getC().getDni());
+		}
 	}
 	
 	

@@ -3,7 +3,7 @@ package ejercicio06;
 public abstract class Cuenta{
 	private double saldo;
 	private int numCuenta;
-	Cliente c;
+	private Cliente c;
 	
 	//Para hacer la interfaz hacer algo relacionado con acciones, IInversiones con un metodo comprar acciones , y 
 	//ese metodo trendria que estar rrescrito en cuenta 

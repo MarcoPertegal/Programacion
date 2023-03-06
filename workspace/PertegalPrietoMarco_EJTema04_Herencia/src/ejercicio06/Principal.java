@@ -14,7 +14,7 @@ public class Principal {
 		lista[0] = new CuentaCorriente(1000, 001,new Cliente("Felipe", 26, "234D"), 7, 0);
 		lista[1] = new CuentaJoven(2000, 002,new Cliente("Felipe", 26, "234D"), 1);
 		lista[2] = new CuentaEmpresa(3000, 003,new Cliente("Felipe", 26, "234D"), 1);
-		lista[3] = new CuentaJoven(1000, 004,new Cliente("Felipe", 26, "234D"), 1);
+		lista[3] = new CuentaJoven(4000, 004,new Cliente("Felipe", 26, "234D"), 1);
 		System.out.println("---------------------");
 		System.out.println("BIENVENIDO A LA CAIXA");
 		System.out.println("---------------------");

@@ -4,6 +4,7 @@ import java.util.Map;
 
 public class Venta {
 	//enta tendra una lista de lineas de venta, 
+	//metodos crud van aqui
 	
 	private Map <Integer, LineaVenta> lista;
 	
@@ -45,6 +46,28 @@ public class Venta {
 			total += l.calcularSubTotal();
 		}
 		return total;
+	}
+	
+	public void imprimirTodo() {
+		int i=1;
+		for (LineaVenta l :lista.values()) {
+			System.out.printf("%d . %s %s %.2f %s \n",i,l.getP().getNombre(), l.getP().getId(), l.getP().getPrecioUni(), l.getCant());
+			i++;
+		}
+	}
+	
+	//metodo find
+	public LineaVenta findById(String idBusq) {
+	
+		for (LineaVenta lv : lista.values()) {
+			if (lv.getP().getId().equalsIgnoreCase(idBusq))
+				return lv;
+		}
+		return null;
+	}
+	
+	public void add(Integer id, LineaVenta lv) {
+		lista.put(id, lv);
 	}
 	
 	

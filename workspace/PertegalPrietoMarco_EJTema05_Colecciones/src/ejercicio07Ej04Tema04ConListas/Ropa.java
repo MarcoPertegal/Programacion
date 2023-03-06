@@ -24,11 +24,4 @@ public class Ropa extends Producto{
 	public double calcularPrecioUni() {
 		return super.getPrecioUni();
 	}
-	
-	//PREGUNTAR ÁNGEL EL COMPARE TO LO HEREDAN LAS HIJAS
-	@Override
-	public int compareTo(LineaVenta o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 }

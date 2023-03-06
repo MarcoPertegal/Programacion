@@ -23,7 +23,7 @@ public class CuentaJoven extends Cuenta{
 	
 	//
 	public void ingresarSaldo(double cantIngreso) {
-		super.setSaldo((getSaldo() + cantIngreso)+1);
+		super.setSaldo(getSaldo() + cantIngreso+extra);
 	}
 	
 	public void retirarSaldo(double cantRetiro) {
@@ -32,5 +32,8 @@ public class CuentaJoven extends Cuenta{
 		else 
 			super.setSaldo(getSaldo()-cantRetiro);
 	}
+	
+	
+	
 		
 }

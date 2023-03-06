@@ -45,11 +45,5 @@ public class Alimentacion extends Producto{
 			return getPrecioUni();
 		}
 	}
-
-	@Override
-	public int compareTo(LineaVenta o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 	
 }

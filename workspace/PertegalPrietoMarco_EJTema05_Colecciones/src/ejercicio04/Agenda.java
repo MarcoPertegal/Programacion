@@ -59,6 +59,14 @@ public class Agenda {
 		}
 		return null;
 	}
+	public Contacto buscarIdV2(int id) {
+		for (Contacto c : lista.keySet()) {
+			if (c.getId() == id) {
+				return c;
+			}
+		}
+		return null;
+	}
 	
 	//para eliminar un contacto hace falta la clave del hash map por lo que dependiendo del tipo que sea la clave nos hará falta un buscar que devuelva una 
 	//cosa u otra
@@ -68,7 +76,7 @@ public class Agenda {
 	
 	public void editarNombre(Contacto c, String nuevoNombre) {
 		c.setNombre(nuevoNombre);
-		lista.replace(c, 1);//metodo para cambiar la pareja del hashmap
+		lista.replace(c, 1);//metodo para el nombre, pero tmb hay que pasarle la otra parte del map
 	}
 	
 }
