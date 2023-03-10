@@ -18,7 +18,7 @@ public class CuentaJoven extends Cuenta {
 
 	@Override
 	public String toString() {
-		return "CuentaJoven [extra=" + extra + "]";
+		return super.toString()+"CuentaJoven [extra=" + extra + "]";
 	}
 	
 	public void ingresarSaldo(double cantIngreso) {//acordarse de que el saldo se hereda
@@ -26,9 +26,11 @@ public class CuentaJoven extends Cuenta {
 	}
 	
 	public void retirarSaldo(double cantRetiro) {
-		if (super.getSaldo() < cantRetiro) 
-			System.out.println("La cantidad que intenta extraer es mayor que el saldo de su cuenta.");
-		else 
+		if (super.getSaldo() < cantRetiro) {
+			//System.out.println("La cantidad que intenta extraer es mayor que el saldo de su cuenta.");no se mezclan sysos con metodos
+		}else {
 			super.setSaldo(super.getSaldo()-cantRetiro);
+		}
+	
 	}
 }

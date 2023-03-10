@@ -18,7 +18,7 @@ public class CuentaEmpresa extends Cuenta {
 
 	@Override
 	public String toString() {
-		return "CuentaEmpresa [comision=" + comision + "]";
+		return super.toString()+"CuentaEmpresa [comision=" + comision + "]";
 	}
 	
 	public void ingresarSaldo(double cantIngreso) {
@@ -27,7 +27,7 @@ public class CuentaEmpresa extends Cuenta {
 	
 	public void retirarSaldo(double cantRetiro) {
 		if (super.getSaldo() < cantRetiro) {
-			System.out.println("La cantidad que intenta extraer es mayor que el saldo de su cuenta.");
+			//System.out.println("La cantidad que intenta extraer es mayor que el saldo de su cuenta."); no se mezclan sysos con metodos
 		}else {
 			super.setSaldo(super.getSaldo()-cantRetiro-comision);
 		}

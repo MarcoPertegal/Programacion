@@ -1,12 +1,22 @@
 package ejemploTrabajo;
 
-public class Principal implements OrderStatus{
+public class Principal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Order o = new Order(111, "Juan", 21);
-		Order o2 = new Order(222, "Felipe", 37);
-		Order o3 = new Order();
+		Envio e = new Envio(111, "Juan", "INICIADO");
+		Envio e1 = new Envio(222, "Felipe", "CONFIRMADO");
+		
+		EstadoEnvio entregado = EstadoEnvio.ENTREGADO;
+		EstadoEnvio confirmado = EstadoEnvio.CONFIRMADO;
+		
+		System.out.println(entregado.name());
+		System.out.println(entregado.toString());
+		System.out.println(entregado.ordinal()); 
+		System.out.println(entregado.compareTo(confirmado));
+		
+		for (EstadoEnvio eE : eE.values()) {
+			
+		}
 	}
-
 }

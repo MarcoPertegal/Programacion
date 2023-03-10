@@ -2,7 +2,7 @@ package ejercicio08Ej06Tema04;
 
 import java.util.Objects;
 
-public class Cuenta {
+public class Cuenta implements Comparable <Cuenta>{
 	private double saldo;
 	private int numCuenta;
 	private Cliente c;
@@ -61,5 +61,16 @@ public class Cuenta {
 	
 	public void retirarSaldo(double cantRetiro) {
 
+	}
+	@Override
+	public int compareTo(Cuenta c) {
+		if (this.saldo > c.getSaldo()) {
+			return -1;
+		}else {
+			if (this.saldo < c.getSaldo()) {
+				return 1;
+			}
+			return 0;
+		}
 	}
 }
