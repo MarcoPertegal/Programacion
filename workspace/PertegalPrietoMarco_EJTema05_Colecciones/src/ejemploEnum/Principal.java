@@ -10,6 +10,7 @@ public class Principal {
 		System.out.println(cadiz.name());
 		System.out.println(cadiz.getNombreClub()+ cadiz.getClasificacion());
 		System.out.println(betis.getNombreClub()+betis.getClasificacion());
+		Equipo.CADIZ.getClasificacion();
 
 	}
 
