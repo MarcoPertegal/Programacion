@@ -2,6 +2,8 @@ package ejemploEnum;
 
 public enum Equipo {
 	
+	//para que se vea que se le pueden dar atributos y como se hace.
+	
 	CADIZ("CÁDIZ CF", 1), SEVILLA("Sevilla FC", 2), BETIS("Real Betis", 3);
 	
 	private String nombreClub;

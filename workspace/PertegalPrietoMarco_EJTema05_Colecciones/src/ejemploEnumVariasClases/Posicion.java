@@ -1,7 +1,5 @@
 package ejemploEnumVariasClases;
 
 public enum Posicion {
-	DELANTERO, CENTROCAMPISTA, DEFENSA, PORTERO
-	
-	
+	DELANTERO, CENTROCAMPISTA, DEFENSA, PORTERO, LATERAL	
 }
